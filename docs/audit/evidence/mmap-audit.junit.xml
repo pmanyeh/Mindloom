@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="10" failures="0" errors="0" time="0.755">
+    <testsuite name="test/phase0-mmap-audit.test.ts" timestamp="2026-10-25T12:35:16.671Z" hostname="&lt;local-machine&gt;" tests="10" failures="0" errors="0" skipped="0" time="0.025027">
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; drops unknown package entries, preview and schema bytes on an unedited save" time="0.0085751">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; drops unknown XML subtrees and attributes without an import warning" time="0.0021977">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; keeps a topic OId on import but changes it on every import/export cycle" time="0.004575">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; imports an attachment then silently omits it and its bytes on export" time="0.0015756">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; imports explicit topic styling but loses it when saved" time="0.0011963">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; flattens full XHTML notes and writes only PreviewPlainText" time="0.0015197">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; accepts the same local names in an unrelated namespace" time="0.0003852">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; writes collapse state but does not read it back" time="0.0009019">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; keeps relationship endpoints and boundary membership while losing their styling" time="0.001804">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; normalizes task time to a date, rounds progress and drops unmapped scheduling fields" time="0.0013119">
+        </testcase>
+    </testsuite>
+</testsuites>

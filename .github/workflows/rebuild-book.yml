@@ -35,7 +35,8 @@ on:
 jobs:
   rebuild:
     name: Rebuild EPUB + PDF
-    if: github.actor != 'github-actions[bot]'
+    # Maploom: keep upstream artifact writes and optional email delivery upstream-only.
+    if: github.repository == 'dannbleeker/mindmap-studio' && github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write

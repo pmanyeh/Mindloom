@@ -1,0 +1,18 @@
+lightningcss@1.32.0
+├─┬ vite@5.4.21
+│ ├─┬ @vitest/mocker@2.1.9
+│ │ └─┬ vitest@2.1.9
+│ │   ├─┬ @vitest/coverage-v8@2.1.9
+│ │   │ └── mindmap-studio@0.0.0 (devDependencies)
+│ │   └── mindmap-studio@0.0.0 (devDependencies)
+│ ├─┬ vite-node@2.1.9
+│ │ └── vitest@2.1.9 [deduped]
+│ └── vitest@2.1.9 [deduped]
+└─┬ vite@8.0.16
+  ├─┬ @vitejs/plugin-react@6.0.2
+  │ └── mindmap-studio@0.0.0 (devDependencies)
+  ├── mindmap-studio@0.0.0 (devDependencies)
+  └─┬ vite-plugin-pwa@1.3.0
+    └── mindmap-studio@0.0.0 (devDependencies)
+
+Found 1 version of lightningcss

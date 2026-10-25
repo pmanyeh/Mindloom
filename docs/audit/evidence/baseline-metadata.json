@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "repository": "https://github.com/dannbleeker/mindmap-studio",
+  "upstreamBranch": "main",
+  "baselineCommit": "65964ac06937514cf9805a2b1198cc20f1e83425",
+  "localBranch": "feature/p0-baseline",
+  "platform": "Windows x64",
+  "git": "2.54.0.windows.1",
+  "node": "24.22.1",
+  "npm": "11.19.1",
+  "pnpm": "11.0.9",
+  "nodeArchive": "https://nodejs.org/dist/v24.22.1/node-v24.22.1-win-x64.zip",
+  "nodeArchiveSha256": "d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95fa5",
+  "nodeChecksumVerifiedAgainst": "https://nodejs.org/dist/v24.22.1/SHASUMS256.txt",
+  "baselineInstall": {
+    "command": "pnpm install --frozen-lockfile",
+    "exitCode": 0
+  },
+  "originalGate": {
+    "command": "pnpm gate",
+    "exitCode": 0,
+    "filesPassed": 219,
+    "testsPassed": 2484,
+    "testsSkipped": 3,
+    "coverage": {
+      "statements": 90.43,
+      "lines": 90.43,
+      "branches": 87.05,
+      "functions": 78.62
+    },
+    "firstLoadGzipKiB": 182.8,
+    "budgetGzipKiB": 184,
+    "sourceChanges": false
+  },
+  "syntheticMmapLossWitnesses": {
+    "passed": 10,
+    "failed": 0
+  },
+  "postAuditChecks": [
+    {
+      "stage": "typecheck",
+      "exitCode": 0
+    },
+    {
+      "stage": "lint",
+      "exitCode": 0
+    },
+    {
+      "stage": "deadcode",
+      "exitCode": 0
+    }
+  ],
+  "mindManagerOracle": "NOT RUN",
+  "deployment": "NOT PERFORMED"
+}

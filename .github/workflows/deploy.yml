@@ -26,7 +26,8 @@ concurrency:
 jobs:
   build:
     # On a workflow_run trigger, only deploy if the rebuild/stats run actually succeeded.
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    # Maploom: source pushes to downstream repositories do not authorize deployment.
+    if: ${{ github.repository == 'dannbleeker/mindmap-studio' && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
     steps:
       # Always deploy main's tip. A workflow_run trigger hands us the *triggering* commit, which

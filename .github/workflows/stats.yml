@@ -31,6 +31,8 @@ concurrency:
 
 jobs:
   stats:
+    # Maploom: downstream pushes retain CI without automatic repository writes.
+    if: github.repository == 'dannbleeker/mindmap-studio'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6

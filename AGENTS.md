@@ -1,0 +1,18 @@
+# Maploom working rules
+
+Read `MAPLOOM_MASTER_PLAN.md` and `phase0-report.md` before changing scope. Phase 0 has been audited; the plan requires review before starting Phase 1. Do not infer authorization for later phases from the initial request to start the plan.
+
+## Remote policy (explicit user instruction)
+
+Push changes only to `origin`, `https://github.com/pmanyeh/Mindloom.git`. Never push any changes to `upstream` (`dannbleeker/mindmap-studio`); use it only for reading/fetching. Keep `remote.pushDefault=origin` and `remote.upstream.pushurl=DISABLED` in this checkout. Verify remotes before any push; do not enable upstream pushes.
+
+- Upstream baseline is `65964ac06937514cf9805a2b1198cc20f1e83425`; retain provenance, `LICENSE`, `LICENSE-BOOK` and `NOTICE.md`.
+- Software is Apache-2.0; the book is separately CC BY-NC 4.0. Default build output contains that book. Resolve artifact scope before product redistribution.
+- Inspect, document, then implement. Prefer additive changes and keep format preservation separate from UI projection.
+- Never silently discard unknown XML/package resources. Current MMAP adapters are lossy; see `docs/audit/P0B_MMAP_AUDIT.md`.
+- Original research `.mmap` files are read-only; write separate output files. Use synthetic or properly sanitized/licensed fixtures only.
+- Do not add proprietary binaries or AGPL implementation to the core. Stop on actual legal/provenance blockers.
+- Compatibility claims require tests; only an independently observed MindManager run can support an Oracle claim.
+- `test/phase0-mmap-audit.test.ts` deliberately asserts current upstream losses. A passing loss witness is not a fidelity guarantee; update it when preservation is implemented.
+- Use `pnpm install --frozen-lockfile` and required checks from `package.json`. Preserve/report baseline failures before fixes. Do not weaken tests or gates to manufacture a pass.
+- Local audit tooling lives in ignored `.tmp/phase0-toolchain`; `tools/phase0/pnpm-local.cmd` uses it without changing machine PATH. No portable development binaries belong in source commits.

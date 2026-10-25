@@ -1,0 +1,30 @@
+Command: pnpm typecheck
+Exit: 0
+pnpm-local.cmd : $ tsc --noEmit
+位於 線路:2 字元:286
++ ... adcode')) { & ./tools/phase0/pnpm-local.cmd $maploomStage *> ('.tmp/p ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ tsc --noEmit:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Command: pnpm lint
+Exit: 0
+pnpm-local.cmd : $ biome check .
+位於 線路:2 字元:286
++ ... adcode')) { & ./tools/phase0/pnpm-local.cmd $maploomStage *> ('.tmp/p ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ biome check .:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Checked 511 files in 311ms. No fixes applied.
+
+Command: pnpm deadcode
+Exit: 0
+pnpm-local.cmd : $ knip
+位於 線路:2 字元:286
++ ... adcode')) { & ./tools/phase0/pnpm-local.cmd $maploomStage *> ('.tmp/p ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ knip:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,3 +1,19 @@
+# Mindloom repository — Maploom development
+
+This repository tracks the Maploom plan and Phase 0 audit on top of MindMap Studio.
+Start with [the master plan](MAPLOOM_MASTER_PLAN.md), [the Phase 0 report](phase0-report.md),
+and [the baseline decision](docs/architecture/ADR-001-editor-baseline.md).
+
+The audited upstream commit is `65964ac06937514cf9805a2b1198cc20f1e83425`.
+The current MMAP adapter is lossy; high-fidelity compatibility and MindManager acceptance
+have not been established. Software and book content have separate licenses, as documented
+below and in [the license audit](docs/audit/P0C_LICENSE_PROVENANCE.md).
+
+Downstream repositories run CI; upstream deployment, book delivery, and automatic stats
+writes are restricted to the upstream repository. Original upstream documentation follows.
+
+---
+
 # MindMap Studio
 
 **Live:** [mindmap-studio.struktureretsundfornuft.dk](https://mindmap-studio.struktureretsundfornuft.dk/)
