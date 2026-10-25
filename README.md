@@ -1,8 +1,13 @@
-# Mindloom repository — Maploom development
+# Mindloom
 
-This repository tracks the Maploom plan and Phase 0 audit on top of MindMap Studio.
-Start with [the master plan](MAPLOOM_MASTER_PLAN.md), [the Phase 0 report](phase0-report.md),
+This repository tracks the Mindloom plan and Phase 0 audit on top of MindMap Studio.
+Start with [the master plan](MINDLOOM_MASTER_PLAN.md), [the Phase 0 report](phase0-report.md),
 and [the baseline decision](docs/architecture/ADR-001-editor-baseline.md).
+
+Phase 1 Batch 1 adds independent read-only inspection commands:
+`pnpm mmap-inspect file.mmap` and `pnpm --silent mmap-normalize file.mmap`.
+See [the inspector documentation](docs/format/MMAP_INSPECTOR.md) and
+[the Batch 1 report](phase1-batch1-report.md). It does not repair or preserve MMAP data.
 
 The audited upstream commit is `65964ac06937514cf9805a2b1198cc20f1e83425`.
 The current MMAP adapter is lossy; high-fidelity compatibility and MindManager acceptance

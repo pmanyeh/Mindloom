@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="99" failures="0" errors="0" time="1.598">
+    <testsuite name="test/mmap-inspector.test.ts" timestamp="2026-10-25T14:52:07.018Z" hostname="&lt;local-machine&gt;" tests="32" failures="0" errors="0" skipped="0" time="0.9617251">
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; inventories a valid package and reliably available central-directory metadata" time="0.0070921">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; distinguishes a valid ZIP missing Document.xml from a malformed ZIP" time="0.0007539">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; reads central metadata in a streamed ZIP with data descriptors (method 0)" time="0.0008321">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; reads central metadata in a streamed ZIP with data descriptors (method 8)" time="0.0010588">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; lists preview, bin, xsd, heuristic resources and unknown entries deterministically" time="0.0025528">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; finds the exact case-sensitive path but refuses ambiguous document candidates" time="0.0012709">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; fails clearly on non-ZIP or truncated input" time="0.0002062">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; fails clearly on non-ZIP or truncated input" time="0.0001289">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; fails clearly on non-ZIP or truncated input" time="0.000159">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; fails clearly on non-ZIP or truncated input" time="0.0002409">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; rejects forged central headers and mismatched local filenames" time="0.0008456">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; rejects ZIP64, multi-disk and encrypted input explicitly" time="0.0010071">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; bounds document extraction and reports unreadable XML separately from well-formedness" time="0.0004097">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; reports malformed XML without misclassifying the ZIP" time="0.0005516">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; reports declared CRC values as evidence, without claiming CRC verification" time="0.0008603">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP package inspector — synthetic inputs &gt; decodes UTF-16 XML and rejects unsupported/mismatched encoding declarations" time="0.0017232">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; counts qualified elements, attributes, namespace declarations and repeated structural paths" time="0.0006785">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; keeps unknown elements and attributes visible without invalidating the map" time="0.0007815">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; recognizes alternate prefixes for the same URI and default namespaces" time="0.0010976">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; resolves scoped prefix rebindings and default namespace resets" time="0.0003894">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; does not invent support for an unfamiliar generation or same-name foreign attributes" time="0.0012244">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; recognizes Core Uri and emitted xsi metadata without claiming unknown styles are supported" time="0.0004227">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; fails malformed or namespace-invalid XML clearly: &lt;a&gt;&lt;b&gt;&lt;/a&gt;" time="0.0007699">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; fails malformed or namespace-invalid XML clearly: &lt;a/&gt;&lt;b/&gt;" time="0.0002318">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; fails malformed or namespace-invalid XML clearly: &lt;q:a/&gt;" time="0.0002351">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; fails malformed or namespace-invalid XML clearly: &lt;a xmlns:p=&quot;urn:x&quot; xmlns:q=&quot;urn:x&quot; p:x=&quot;1&quot; q:x=&quot;2&quot;/&gt;" time="0.0003023">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; fails malformed or namespace-invalid XML clearly: &lt;a xmlns:xml=&quot;urn:wrong&quot;/&gt;" time="0.0002237">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; fails malformed or namespace-invalid XML clearly: &lt;a xmlns:p=&quot;&quot;/&gt;" time="0.000331">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP XML inventory — namespace-aware inspection &gt; ignores comments/CDATA/processing instructions as elements and decodes namespace entities" time="0.0004695">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP normalization and standalone CLI &gt; is byte deterministic, omits input paths, and keeps unknown structures" time="0.0047723">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP normalization and standalone CLI &gt; sorts independent inventories consistently despite ZIP entry ordering" time="0.0023548">
+        </testcase>
+        <testcase classname="test/mmap-inspector.test.ts" name="MMAP normalization and standalone CLI &gt; runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes" time="0.9262438">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/mmap.test.ts" timestamp="2026-10-25T14:52:07.023Z" hostname="&lt;local-machine&gt;" tests="57" failures="0" errors="0" skipped="2" time="0.0567057">
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports the two-sided arrangement: each main branch&apos;s side from its offset sign (depth-1 only)" time="0.0072002">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; extracts the topic tree from a synthetic .mmap" time="0.001852">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; captures notes (NotesXhtmlData PreviewPlainText)" time="0.000853">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; throws a helpful error when the zip is not a MindManager map" time="0.0011824">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; throws when a &lt;Map&gt; has no root &lt;Topic&gt;" time="0.0007491">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports per-topic task info (priority/progress/dates/resources) without warning" time="0.0008166">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports the full notes XHTML body, not just the truncated preview" time="0.0011146">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; falls back to the notes PreviewPlainText when there is no XHTML body" time="0.0005445">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports user tags from TextLabels" time="0.0006106">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports explicit topic fill/line colour + font as node style (ARGB alpha-first → #rrggbb)" time="0.0006652">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; ignores a fully-transparent fill colour (alpha 00 → no style override)" time="0.0004467">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports rich-text runs (FontRange) into topicRich, keeping the plain topic" time="0.0007308">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports a geometric topic shape (SubTopicShape → style.shape)" time="0.0004192">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports an embedded image from bin/ as a data URL (OneImage → mmarch://)" time="0.0008074">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; skips a vector (EMF) image with no raster fallback, with a warning" time="0.0007325">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports an embedded attachment, recovering the real name from @FileName" time="0.0007841">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports relationship styling (colour / width / dash / arrowheads)" time="0.0011443">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports boundary styling (colour / shape / dash)" time="0.0007158">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; lifts a callout floating-topic onto its parent (not a floating branch)" time="0.0005404">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports the map background colour (StyleGroup&gt;BackgroundFill)" time="0.0004548">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; generates an id for a topic that has no OId" time="0.0003902">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; reads a root &lt;Topic&gt; placed directly under &lt;Map&gt; (no &lt;OneTopic&gt;)" time="0.0003309">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; falls back to the @Text attribute for topic text" time="0.0003363">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; tolerates a legacy &lt;Notes&gt;&lt;CDATA&gt; note shape" time="0.0003864">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; ignores an icon that has no IconType" time="0.0004155">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports MindManager stock icons as node.icons" time="0.0004696">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports topic hyperlinks" time="0.0004616">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; drops a dangerous-scheme hyperlink on import (XSS guard)" time="0.0003691">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports relationships as cross-links" time="0.0007206">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports a topic boundary over its subtree" time="0.0012098">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports map-level floating topics and warns they aren&apos;t drawn" time="0.000868">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; warns about topics it cannot reach" time="0.0004167">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; throws when Document.xml parses but has no &lt;Map&gt; root element" time="0.000418">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports a relationship&apos;s label when present" time="0.0004534">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; defaults the map title when the root topic has no text" time="0.0003593">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap &gt; imports a map using every feature together" time="0.001681">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap → parseMmap round-trip &gt; round-trips tree, text, note, hyperlink, icons, side, links, floating" time="0.0023607">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap → parseMmap round-trip &gt; round-trips tags, task info, and an embedded PNG image (writer fidelity — item 8)" time="0.0023444">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; is byte-deterministic (no time/randomness)" time="0.0048729">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; stays byte-deterministic with tags / task / image (bin entries + mtime pinned)" time="0.0026574">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; escapes user text and drops dangerous hyperlinks" time="0.0011001">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; maps emoji to canonical IconTypes and omits non-MindManager markers" time="0.0004134">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; emits the side offset on depth-1 mains + LeftAndRight, never deeper" time="0.0004945">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; emits OneBoundary only when a boundary equals a topic&apos;s full subtree" time="0.0010194">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; normalises CR/CRLF to LF so multi-line text round-trips (no raw CR survives)" time="0.000873">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; strips XML-illegal control characters so the document stays well-formed" time="0.0008515">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; never emits a side offset or LeftAndRight inside a floating subtree" time="0.0005802">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap &gt; gives the map element an OId distinct from every node, even a colliding id" time="0.000593">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real .mmap (MMAP_FILE) &gt; imports the real map and reports what survives vs. is lost" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="toMmap — real .mmap re-emit (MMAP_FILE) &gt; re-emits a real-origin map that re-imports with the same shape" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; resolves a bin URI tolerant of scheme case, leading slashes, and path case" time="0.0006617">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; resolves a bin URI by basename when the archive stores it under a different folder" time="0.0005358">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; caps a large ImageSize to the 280px display max, preserving aspect ratio" time="0.0009109">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; falls back to a raster AlternateImageData when the primary is a vector (Metafile)" time="0.0007071">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; imports an IconImage as a PNG data URL" time="0.0004001">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; skips a Folder attachment and one whose bytes are missing, keeping the real file" time="0.0006074">
+        </testcase>
+        <testcase classname="test/mmap.test.ts" name="parseMmap — real-export robustness (bin resolution + ImageSize) &gt; imports a realistic multi-feature archive (tree + image + attachment + note + tags) in one pass" time="0.0012343">
+        </testcase>
+    </testsuite>
+    <testsuite name="test/phase0-mmap-audit.test.ts" timestamp="2026-10-25T14:52:07.031Z" hostname="&lt;local-machine&gt;" tests="10" failures="0" errors="0" skipped="0" time="0.0269259">
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; drops unknown package entries, preview and schema bytes on an unedited save" time="0.0086859">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; drops unknown XML subtrees and attributes without an import warning" time="0.0026877">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; keeps a topic OId on import but changes it on every import/export cycle" time="0.0053022">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; imports an attachment then silently omits it and its bytes on export" time="0.0018599">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; imports explicit topic styling but loses it when saved" time="0.0010511">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; flattens full XHTML notes and writes only PreviewPlainText" time="0.0015917">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; accepts the same local names in an unrelated namespace" time="0.0004934">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; writes collapse state but does not read it back" time="0.0008731">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; keeps relationship endpoints and boundary membership while losing their styling" time="0.001817">
+        </testcase>
+        <testcase classname="test/phase0-mmap-audit.test.ts" name="Maploom Phase 0 — upstream MMAP loss witnesses &gt; normalizes task time to a date, rounds progress and drops unmapped scheduling fields" time="0.0014389">
+        </testcase>
+    </testsuite>
+</testsuites>

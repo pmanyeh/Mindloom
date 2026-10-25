@@ -1,0 +1,14 @@
+
+ RUN  v2.1.9 <workspace>
+
+ ✓ test/phase0-mmap-audit.test.ts (10 tests) 27ms
+ ✓ test/mmap.test.ts (57 tests | 2 skipped) 57ms
+ ✓ test/mmap-inspector.test.ts (32 tests) 962ms
+   ✓ MMAP normalization and standalone CLI > runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes 926ms
+
+ Test Files  3 passed (3)
+      Tests  97 passed | 2 skipped (99)
+   Start at  22:52:05
+   Duration  1.60s (transform 215ms, setup 351ms, collect 485ms, tests 1.05s, environment 0ms, prepare 420ms)
+
+JUNIT report written to <workspace>/.tmp/phase0-toolchain/p1-focused.junit.xml

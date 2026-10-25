@@ -1,6 +1,6 @@
-# Maploom working rules
+# Mindloom working rules
 
-Read `MAPLOOM_MASTER_PLAN.md` and `phase0-report.md` before changing scope. Phase 0 has been audited; the plan requires review before starting Phase 1. Do not infer authorization for later phases from the initial request to start the plan.
+Read `MINDLOOM_MASTER_PLAN.md` and the phase reports before changing scope. The user has authorized Phase 1 Batch 1 only: package inspection, XML inventory and initial deterministic normalization. Stop after `phase1-batch1-report.md`; do not begin the full synthetic/real corpus (Batch 2/3) or Phase 2 preservation. Historical Phase 0 documents retain the former Maploom name.
 
 ## Remote policy (explicit user instruction)
 

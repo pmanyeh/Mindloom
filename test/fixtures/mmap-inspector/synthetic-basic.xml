@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mindloom Batch 1 synthetic inspection fixture. Not produced or verified by MindManager. -->
+<ap:Map xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003" xmlns:f="urn:mindloom:synthetic-future">
+  <ap:OneTopic>
+    <ap:Topic OId="synthetic-root" f:Flag="opaque">
+      <ap:Text PlainText="Synthetic inspector example"/>
+      <ap:SubTopics>
+        <ap:Topic OId="synthetic-child-a"><ap:Text PlainText="A"/></ap:Topic>
+        <ap:Topic OId="synthetic-child-b"><ap:Text PlainText="B"/></ap:Topic>
+      </ap:SubTopics>
+      <f:FutureFeature f:Mode="synthetic"/>
+    </ap:Topic>
+  </ap:OneTopic>
+</ap:Map>

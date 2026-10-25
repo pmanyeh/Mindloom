@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "inputFile": ".tmp/mmap-inspector-synthetic.mmap",
+  "valid": true,
+  "package": {
+    "valid": true,
+    "validation": "ZIP32 structural bounds only; CRC/payload integrity not verified",
+    "entryCount": 7,
+    "entries": [
+      {
+        "path": "Document.xml",
+        "kind": "file",
+        "uncompressedSize": 663,
+        "compressedSize": 322,
+        "compressionMethod": 8,
+        "declaredCrc32": "ebf580df",
+        "category": "document"
+      },
+      {
+        "path": "Preview.png",
+        "kind": "file",
+        "uncompressedSize": 2,
+        "compressedSize": 4,
+        "compressionMethod": 8,
+        "declaredCrc32": "b6cc4292",
+        "category": "preview"
+      },
+      {
+        "path": "bin/",
+        "kind": "directory",
+        "uncompressedSize": 0,
+        "compressedSize": 2,
+        "compressionMethod": 8,
+        "declaredCrc32": "00000000",
+        "category": "bin"
+      },
+      {
+        "path": "bin/synthetic.bin",
+        "kind": "file",
+        "uncompressedSize": 1,
+        "compressedSize": 3,
+        "compressionMethod": 8,
+        "declaredCrc32": "4b0bbe37",
+        "category": "bin"
+      },
+      {
+        "path": "custom/opaque.dat",
+        "kind": "file",
+        "uncompressedSize": 2,
+        "compressedSize": 4,
+        "compressionMethod": 8,
+        "declaredCrc32": "00430c0a",
+        "category": "unknown"
+      },
+      {
+        "path": "images/synthetic.svg",
+        "kind": "file",
+        "uncompressedSize": 6,
+        "compressedSize": 8,
+        "compressionMethod": 8,
+        "declaredCrc32": "acb9fb49",
+        "category": "resource-like"
+      },
+      {
+        "path": "xsd/synthetic.xsd",
+        "kind": "file",
+        "uncompressedSize": 37,
+        "compressedSize": 39,
+        "compressionMethod": 8,
+        "declaredCrc32": "a5309778",
+        "category": "xsd"
+      }
+    ]
+  },
+  "document": {
+    "present": true,
+    "candidates": [
+      "Document.xml"
+    ],
+    "path": "Document.xml",
+    "size": 663,
+    "encoding": "utf-8",
+    "wellFormed": true,
+    "inventory": {
+      "declarationEncoding": "UTF-8",
+      "root": {
+        "qualifiedName": "ap:Map",
+        "localName": "Map",
+        "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003"
+      },
+      "namespaces": [
+        {
+          "prefix": "ap",
+          "uri": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "path": "/ap:Map",
+          "count": 1
+        },
+        {
+          "prefix": "f",
+          "uri": "urn:mindloom:synthetic-future",
+          "path": "/ap:Map",
+          "count": 1
+        }
+      ],
+      "elements": [
+        {
+          "qualifiedName": "ap:Map",
+          "localName": "Map",
+          "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "recognition": "known",
+          "count": 1
+        },
+        {
+          "qualifiedName": "ap:OneTopic",
+          "localName": "OneTopic",
+          "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "recognition": "known",
+          "count": 1
+        },
+        {
+          "qualifiedName": "ap:SubTopics",
+          "localName": "SubTopics",
+          "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "recognition": "known",
+          "count": 1
+        },
+        {
+          "qualifiedName": "ap:Text",
+          "localName": "Text",
+          "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "recognition": "known",
+          "count": 3
+        },
+        {
+          "qualifiedName": "ap:Topic",
+          "localName": "Topic",
+          "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "recognition": "known",
+          "count": 3
+        },
+        {
+          "qualifiedName": "f:FutureFeature",
+          "localName": "FutureFeature",
+          "namespaceUri": "urn:mindloom:synthetic-future",
+          "recognition": "unrecognized",
+          "count": 1
+        }
+      ],
+      "attributes": [
+        {
+          "qualifiedName": "OId",
+          "localName": "OId",
+          "namespaceUri": "",
+          "owner": {
+            "qualifiedName": "ap:Topic",
+            "localName": "Topic",
+            "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003"
+          },
+          "recognition": "known",
+          "count": 3
+        },
+        {
+          "qualifiedName": "PlainText",
+          "localName": "PlainText",
+          "namespaceUri": "",
+          "owner": {
+            "qualifiedName": "ap:Text",
+            "localName": "Text",
+            "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003"
+          },
+          "recognition": "known",
+          "count": 3
+        },
+        {
+          "qualifiedName": "f:Flag",
+          "localName": "Flag",
+          "namespaceUri": "urn:mindloom:synthetic-future",
+          "owner": {
+            "qualifiedName": "ap:Topic",
+            "localName": "Topic",
+            "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003"
+          },
+          "recognition": "unrecognized",
+          "count": 1
+        },
+        {
+          "qualifiedName": "f:Mode",
+          "localName": "Mode",
+          "namespaceUri": "urn:mindloom:synthetic-future",
+          "owner": {
+            "qualifiedName": "f:FutureFeature",
+            "localName": "FutureFeature",
+            "namespaceUri": "urn:mindloom:synthetic-future"
+          },
+          "recognition": "unrecognized",
+          "count": 1
+        }
+      ],
+      "paths": [
+        {
+          "path": "/ap:Map",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map"
+          ],
+          "count": 1
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic"
+          ],
+          "count": 1
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic/ap:Topic",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic"
+          ],
+          "count": 1
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics"
+          ],
+          "count": 1
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics/ap:Topic",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic"
+          ],
+          "count": 2
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics/ap:Topic/ap:Text",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Text"
+          ],
+          "count": 2
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic/ap:Topic/ap:Text",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Text"
+          ],
+          "count": 1
+        },
+        {
+          "path": "/ap:Map/ap:OneTopic/ap:Topic/f:FutureFeature",
+          "expandedPath": [
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+            "{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+            "{urn:mindloom:synthetic-future}FutureFeature"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  },
+  "preview": {
+    "present": true,
+    "paths": [
+      "Preview.png"
+    ]
+  },
+  "resources": {
+    "bin": [
+      "bin/",
+      "bin/synthetic.bin"
+    ],
+    "xsd": [
+      "xsd/synthetic.xsd"
+    ],
+    "resourceLike": [
+      "images/synthetic.svg"
+    ]
+  },
+  "unknown": {
+    "entries": [
+      "custom/opaque.dat"
+    ],
+    "elements": [
+      {
+        "qualifiedName": "f:FutureFeature",
+        "localName": "FutureFeature",
+        "namespaceUri": "urn:mindloom:synthetic-future",
+        "recognition": "unrecognized",
+        "count": 1
+      }
+    ],
+    "attributes": [
+      {
+        "qualifiedName": "f:Flag",
+        "localName": "Flag",
+        "namespaceUri": "urn:mindloom:synthetic-future",
+        "owner": {
+          "qualifiedName": "ap:Topic",
+          "localName": "Topic",
+          "namespaceUri": "http://schemas.mindjet.com/MindManager/Application/2003"
+        },
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "qualifiedName": "f:Mode",
+        "localName": "Mode",
+        "namespaceUri": "urn:mindloom:synthetic-future",
+        "owner": {
+          "qualifiedName": "f:FutureFeature",
+          "localName": "FutureFeature",
+          "namespaceUri": "urn:mindloom:synthetic-future"
+        },
+        "recognition": "unrecognized",
+        "count": 1
+      }
+    ]
+  },
+  "issues": []
+}

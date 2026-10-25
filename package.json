@@ -10,6 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "mmap-inspect": "node --experimental-strip-types tools/mmap-cli.ts inspect",
+    "mmap-normalize": "node --experimental-strip-types tools/mmap-cli.ts normalize",
     "typecheck": "tsc --noEmit",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",

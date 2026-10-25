@@ -1,6 +1,6 @@
-# MAPLOOM_MASTER_PLAN.md
+# MINDLOOM_MASTER_PLAN.md
 
-> **Project name:** Maploom
+> **Project name:** Mindloom
 > **Project type:** MindManager-compatible mind-map editor  
 > **Primary goal:** High-fidelity `.mmap` round-trip compatibility without depending on MindManager at runtime  
 > **Preferred base:** MindMap Studio (Apache-2.0)  
@@ -14,13 +14,13 @@
 
 # 0. Executive Summary
 
-Maploom 不是要「複製 MindManager 原始碼」，也不是以 pixel-perfect clone 為第一優先。
+Mindloom 不是要「複製 MindManager 原始碼」，也不是以 pixel-perfect clone 為第一優先。
 
 真正目標是建立一套：
 
-> **Maploom：可以取代日常 MindManager 使用、能可靠開啟／編輯／儲存 `.mmap`，並盡量不破壞不認識資料的相容編輯器。**
+> **Mindloom：可以取代日常 MindManager 使用、能可靠開啟／編輯／儲存 `.mmap`，並盡量不破壞不認識資料的相容編輯器。**
 
-Maploom 不把自己限制成 MindManager clone；長期定位是可處理多種 mind-map 格式、但以 `.mmap` 高相容 round-trip 為首要突破口的開放式編輯器。
+Mindloom 不把自己限制成 MindManager clone；長期定位是可處理多種 mind-map 格式、但以 `.mmap` 高相容 round-trip 為首要突破口的開放式編輯器。
 
 建議不再以舊版 XMind 原始碼為核心。
 
@@ -68,7 +68,7 @@ Maploom 不把自己限制成 MindManager clone；長期定位是可處理多種
 
 ## 1.1 Primary Goal
 
-建立 Maploom：一套可在沒有 MindManager 的環境中正常使用的 mind-map editor，並達到：
+建立 Mindloom：一套可在沒有 MindManager 的環境中正常使用的 mind-map editor，並達到：
 
 ```text
 MindManager
@@ -265,13 +265,13 @@ Mind Elixir Core 為 MIT license，具有：
 本專案正式名稱：
 
 ```text
-Maploom
+Mindloom
 ```
 
 產品與核心模組命名：
 
 ```text
-Maploom
+Mindloom
 │
 ├─ Editor
 ├─ Canvas
@@ -287,22 +287,22 @@ Maploom
 
 命名原則：
 
-- **Maploom**：使用者看到的完整產品名稱。
+- **Mindloom**：使用者看到的完整產品名稱。
 - **MapBridge Engine**：底層跨格式相容、轉換、驗證與 round-trip 核心。
 - **MMAP Compatibility Layer**：MapBridge Engine 內針對 MindManager `.mmap` 的高相容層。
 - 未來若新增 CLI，可使用 `mapbridge` 作為命令名稱。
-- 公開文案避免將 Maploom 描述為官方 MindManager 產品或使用容易造成商標混淆的名稱。
+- 公開文案避免將 Mindloom 描述為官方 MindManager 產品或使用容易造成商標混淆的名稱。
 
 建議未來 repository 名稱：
 
 ```text
-maploom
+mindloom
 ```
 
 若拆分核心：
 
 ```text
-maploom
+mindloom
 mapbridge
 ```
 
@@ -2331,7 +2331,7 @@ M12 1.0
 權威計畫：
 
 ```text
-MAPLOOM_MASTER_PLAN.md
+MINDLOOM_MASTER_PLAN.md
 ```
 
 本次只執行：

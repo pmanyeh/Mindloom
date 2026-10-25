@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "repository": "https://github.com/pmanyeh/Mindloom",
+  "branch": "feature/p1-batch1-inspector",
+  "baseCommit": "e2e3931664c45b476db75f7df9121035c8dc6654",
+  "platform": "Windows x64",
+  "node": "24.22.1",
+  "pnpm": "11.0.9",
+  "focused": {
+    "filesPassed": 3,
+    "testsPassed": 97,
+    "testsSkipped": 2,
+    "exitCode": 0
+  },
+  "newInspectorTests": {
+    "passed": 32,
+    "failed": 0
+  },
+  "gate": {
+    "command": "pnpm gate",
+    "exitCode": 0,
+    "filesPassed": 221,
+    "testsPassed": 2526,
+    "testsSkipped": 3,
+    "statements": 90.62,
+    "lines": 90.62,
+    "branches": 87.21,
+    "functions": 78.79,
+    "firstLoadGzipKiB": 182.8,
+    "sizeBudgetKiB": 184
+  },
+  "cli": {
+    "inspectExitCode": 0,
+    "normalizeExitCode": 0,
+    "nodeSubprocessTest": "PASS"
+  },
+  "protectedFiles": {
+    "existingMmapReader": "unchanged",
+    "existingMmapWriter": "unchanged",
+    "canonicalModel": "unchanged",
+    "phase0LossWitnesses": "unchanged",
+    "lockfile": "unchanged"
+  },
+  "phaseBoundary": "No Phase 2 preservation behavior was implemented.",
+  "mindManagerOracle": "NOT RUN"
+}
