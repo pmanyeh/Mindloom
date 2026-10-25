@@ -1,9 +1,21 @@
-# MindMap Studio — working agreement
+# Mindloom — working agreement
 
-A local-first, offline mind-mapping PWA replacing Corel/Mindjet MindManager.
-React 19 + Vite + TypeScript, built on **React Flow** (`@xyflow/react`, MIT). Sibling
-to TP Studio and MECE Studio. These habits override default behavior — hold both
-of us to them.
+Mindloom is a local-first mind-map editor targeting high-fidelity MindManager
+compatibility, based on **MindMap Studio** (Apache-2.0). The upstream foundation
+uses React 19 + Vite + TypeScript, built on **React Flow** (`@xyflow/react`, MIT),
+and is a sibling to TP Studio and MECE Studio. Retain its provenance and useful
+engineering practices within Mindloom's authorized scope.
+
+## Roadmap and current authorization
+
+- [`MINDLOOM_MASTER_PLAN.md`](MINDLOOM_MASTER_PLAN.md) is the authoritative
+  Mindloom roadmap and defines its long-term scope.
+- [`AGENTS.md`](AGENTS.md) and the phase reports define current authorization
+  boundaries, subject to explicit user instructions. A roadmap item alone does
+  not authorize work in a later phase or batch.
+- Upstream MindMap Studio documentation provides engineering context and
+  provenance; it does not override the Mindloom roadmap or current authorization
+  boundaries.
 
 ## The ship loop — "green before done"
 
@@ -88,8 +100,9 @@ The `vitest run --coverage` step enforces a no-regression coverage floor
 - Dev server is registered for preview as **`mindmap-dev`** on port **5175**.
 - Engine: React Flow (`src/mindmap/flow/`). Canonical model: `src/model/types.ts`.
   Import/export adapters: `src/io/`. The `.mmap` importer (`src/import/`) is **one-way + lossy by design**.
-- Scope: **brainstorming/knowledge + presentations/sharing**. The task / Gantt /
-  SmartRules / resource PM layer is **out of scope** unless we decide otherwise.
+- Scope: task / Gantt / SmartRules / resource-PM work is outside the **CURRENT
+  authorized phase** unless explicitly authorized. Mindloom's long-term scope is
+  governed by `MINDLOOM_MASTER_PLAN.md`.
 
 ## Response style
 
