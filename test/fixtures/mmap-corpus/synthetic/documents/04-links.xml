@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mindloom synthetic fixture; no MindManager/Oracle validation. -->
+<ap:Map xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003">
+  <ap:OneTopic><ap:Topic OId="root"><ap:Text PlainText="Synthetic root"/>
+    <ap:Hyperlink Url="https://example.invalid/mindloom-fixture"/>
+  </ap:Topic></ap:OneTopic>
+</ap:Map>

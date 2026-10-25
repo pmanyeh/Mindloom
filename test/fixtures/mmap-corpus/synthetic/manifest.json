@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "corpus": "mindloom-phase1-synthetic",
+  "claims": {
+    "mindManagerGenerated": false,
+    "oracleVerified": false,
+    "roundTripSafe": false,
+    "schemaValidated": false,
+    "compatibilityEstablished": false,
+    "writerGenerated": false
+  },
+  "fixtures": [
+    {
+      "id": "01-root-only",
+      "feature": "root-only",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/01-root-only.xml",
+      "sourceEvidence": ["src/import/mmap.ts#parseMmap", "src/io/mmap.ts#topicXml"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1
+        },
+        "attributes": {
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Minimal field mapping only; no save fidelity or schema conformance established."
+      ]
+    },
+    {
+      "id": "02-three-level-tree",
+      "feature": "three-level-tree",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/02-three-level-tree.xml",
+      "sourceEvidence": ["src/import/mmap.ts#topicToNode"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root", "level-1", "level-2"],
+        "elements": {
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:SubTopics": 2,
+          "ap:Text": 3,
+          "ap:Topic": 3
+        },
+        "attributes": {
+          "ap:Text@PlainText": 3,
+          "ap:Topic@OId": 3
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics/ap:Topic/ap:SubTopics/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Minimal field mapping only; no save fidelity or schema conformance established."
+      ]
+    },
+    {
+      "id": "03-notes",
+      "feature": "notes",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/03-notes.xml",
+      "sourceEvidence": [
+        "src/import/mmap.ts#extractNote",
+        "src/import/mmap.ts#collectXhtmlText",
+        "test/mmap.test.ts#full-notes-XHTML"
+      ],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": [
+          "http://schemas.mindjet.com/MindManager/Application/2003",
+          "http://www.w3.org/1999/xhtml"
+        ],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Map": 1,
+          "ap:NotesGroup": 1,
+          "ap:NotesXhtmlData": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1,
+          "b": 1,
+          "body": 1,
+          "html": 1,
+          "p": 1
+        },
+        "attributes": {
+          "ap:NotesXhtmlData@PreviewPlainText": 1,
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:NotesGroup/ap:NotesXhtmlData/html/body/p/b": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": ["b"],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "The b wrapper is currently unrecognized by the inspector vocabulary; importer flattens note markup. This is not rich-note fidelity."
+      ]
+    },
+    {
+      "id": "04-links",
+      "feature": "links",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/04-links.xml",
+      "sourceEvidence": ["src/import/mmap.ts#topicToNode", "src/io/mmap.ts#topicXml"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Hyperlink": 1,
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1
+        },
+        "attributes": {
+          "ap:Hyperlink@Url": 1,
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Hyperlink": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Minimal field mapping only; no save fidelity or schema conformance established."
+      ]
+    },
+    {
+      "id": "05-icons",
+      "feature": "icons",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/05-icons.xml",
+      "sourceEvidence": ["src/import/mmap.ts#extractIcons", "src/icons.ts#EMOJI_TO_MM"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Icon": 1,
+          "ap:Icons": 1,
+          "ap:IconsGroup": 1,
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1
+        },
+        "attributes": {
+          "ap:Icon@IconType": 1,
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:IconsGroup/ap:Icons/ap:Icon": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Minimal field mapping only; no save fidelity or schema conformance established."
+      ]
+    },
+    {
+      "id": "06-tags",
+      "feature": "tags",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/06-tags.xml",
+      "sourceEvidence": ["src/import/mmap.ts#extractTags", "src/io/mmap.ts#topicXml"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:TextLabel": 1,
+          "ap:TextLabels": 1,
+          "ap:Topic": 1
+        },
+        "attributes": {
+          "ap:Text@PlainText": 1,
+          "ap:TextLabel@TextLabelName": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:TextLabels/ap:TextLabel": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Minimal field mapping only; no save fidelity or schema conformance established."
+      ]
+    },
+    {
+      "id": "07-task",
+      "feature": "task",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/07-task.xml",
+      "sourceEvidence": ["src/import/mmap.ts#extractTask", "src/io/mmap.ts#topicXml"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Task": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1
+        },
+        "attributes": {
+          "ap:Task@DeadlineDate": 1,
+          "ap:Task@Resources": 1,
+          "ap:Task@StartDate": 1,
+          "ap:Task@TaskPercentage": 1,
+          "ap:Task@TaskPriority": 1,
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Task": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Fixed date strings and resource label only; no calculation, dependency or roll-up semantics."
+      ]
+    },
+    {
+      "id": "08-image",
+      "feature": "image",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/08-image.xml",
+      "sourceEvidence": [
+        "src/import/mmap.ts#extractImage",
+        "src/io/mmap.ts#topicXml",
+        "tools/mmap-corpus/builder.ts#syntheticPixelPng"
+      ],
+      "resources": [
+        {
+          "path": "bin/synthetic-pixel.png",
+          "recipe": "rgba-1x1-v1"
+        }
+      ],
+      "expected": {
+        "packageEntries": ["Document.xml", "bin/synthetic-pixel.png"],
+        "namespaceUris": [
+          "http://schemas.mindjet.com/MindManager/Application/2003",
+          "http://schemas.mindjet.com/MindManager/Core/2003"
+        ],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Image": 1,
+          "ap:ImageData": 1,
+          "ap:ImageSize": 1,
+          "ap:Map": 1,
+          "ap:OneImage": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1,
+          "cor:Uri": 1
+        },
+        "attributes": {
+          "ap:ImageData@ImageType": 1,
+          "ap:ImageSize@Height": 1,
+          "ap:ImageSize@Width": 1,
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:OneImage/ap:Image/ap:ImageData/cor:Uri": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:OneImage/ap:Image/ap:ImageSize": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": ["mmarch://bin/synthetic-pixel.png"],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Project-generated 1x1 RGBA PNG; ImageSize is a display size in millimetres, not a raster-dimension claim."
+      ]
+    },
+    {
+      "id": "09-relationship",
+      "feature": "relationship",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/09-relationship.xml",
+      "sourceEvidence": [
+        "src/import/mmap.ts#extractRelationships",
+        "src/io/mmap.ts#relationshipXml"
+      ],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root", "child-a"],
+        "elements": {
+          "ap:Connection": 2,
+          "ap:ConnectionGroup": 2,
+          "ap:Map": 1,
+          "ap:ObjectReference": 2,
+          "ap:OneTopic": 1,
+          "ap:Relationship": 1,
+          "ap:Relationships": 1,
+          "ap:SubTopics": 1,
+          "ap:Text": 2,
+          "ap:Topic": 2
+        },
+        "attributes": {
+          "ap:ObjectReference@OIdRef": 2,
+          "ap:Text@PlainText": 2,
+          "ap:Topic@OId": 2
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1,
+          "/ap:Map/ap:Relationships/ap:Relationship/ap:ConnectionGroup/ap:Connection/ap:ObjectReference": 2
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": ["root", "child-a"]
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "References resolve only within this synthetic file; no editing or source-identity preservation claim."
+      ]
+    },
+    {
+      "id": "10-boundary",
+      "feature": "boundary",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/10-boundary.xml",
+      "sourceEvidence": ["src/import/mmap.ts#topicToNode", "test/mmap.test.ts#topic-boundary"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root"],
+        "elements": {
+          "ap:Boundary": 1,
+          "ap:Map": 1,
+          "ap:OneBoundary": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 1,
+          "ap:Topic": 1
+        },
+        "attributes": {
+          "ap:Text@PlainText": 1,
+          "ap:Topic@OId": 1
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:OneBoundary/ap:Boundary": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Boundary covers the root subtree; no geometry, styling or arbitrary-span encoding inferred."
+      ]
+    },
+    {
+      "id": "11-callout",
+      "feature": "callout",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/11-callout.xml",
+      "sourceEvidence": [
+        "src/import/mmap.ts#extractCallouts",
+        "test/mmap.test.ts#callout",
+        "docs/audit/P0B_MMAP_AUDIT.md#feature-inventory"
+      ],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root", "callout"],
+        "elements": {
+          "ap:CalloutFloatingTopicShape": 1,
+          "ap:FloatingTopics": 1,
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 2,
+          "ap:Topic": 2
+        },
+        "attributes": {
+          "ap:Text@PlainText": 2,
+          "ap:Topic@OId": 2
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:FloatingTopics/ap:Topic/ap:CalloutFloatingTopicShape": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Importer lifts the callout onto its parent; current MMAP writer omits it. This known loss remains visible."
+      ]
+    },
+    {
+      "id": "12-floating",
+      "feature": "floating",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/12-floating.xml",
+      "sourceEvidence": ["src/import/mmap.ts#parseMmap", "src/io/mmap.ts#toMmap"],
+      "resources": [],
+      "expected": {
+        "packageEntries": ["Document.xml"],
+        "namespaceUris": ["http://schemas.mindjet.com/MindManager/Application/2003"],
+        "topicIds": ["root", "floating"],
+        "elements": {
+          "ap:FloatingTopics": 1,
+          "ap:Map": 1,
+          "ap:OneTopic": 1,
+          "ap:Text": 2,
+          "ap:Topic": 2
+        },
+        "attributes": {
+          "ap:Text@PlainText": 2,
+          "ap:Topic@OId": 2
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:FloatingTopics/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1
+        },
+        "unrecognizedElements": [],
+        "unrecognizedAttributes": [],
+        "resourceUris": [],
+        "relationshipRefs": []
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Map-level detached topic only; offsets are omitted because current adapters do not preserve floating placement."
+      ]
+    },
+    {
+      "id": "13-summary",
+      "feature": "summary",
+      "provenance": "synthetic",
+      "status": "pending-format-evidence",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": null,
+      "sourceEvidence": [
+        "src/import/mmap.ts#dropped-summary-brackets",
+        "src/io/mmap.ts#dropped-summaries",
+        "docs/audit/P0B_MMAP_AUDIT.md#feature-inventory"
+      ],
+      "resources": [],
+      "expected": null,
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "No evidence-backed MMAP summary representation exists in the accepted adapters. No XML or .mmap payload is fabricated."
+      ]
+    },
+    {
+      "id": "14-mixed",
+      "feature": "mixed",
+      "provenance": "synthetic",
+      "status": "generated",
+      "generator": "tools/mmap-corpus/builder.ts#fixed-zip32-v1",
+      "definition": "documents/14-mixed.xml",
+      "sourceEvidence": [
+        "src/import/mmap.ts#parseMmap",
+        "docs/format/MMAP_SYNTHETIC_CORPUS.md#fixture-matrix"
+      ],
+      "resources": [
+        {
+          "path": "bin/synthetic-pixel.png",
+          "recipe": "rgba-1x1-v1"
+        }
+      ],
+      "expected": {
+        "packageEntries": ["Document.xml", "bin/synthetic-pixel.png"],
+        "namespaceUris": [
+          "http://schemas.mindjet.com/MindManager/Application/2003",
+          "http://schemas.mindjet.com/MindManager/Core/2003",
+          "http://www.w3.org/1999/xhtml"
+        ],
+        "topicIds": ["root", "child-a", "callout", "floating"],
+        "elements": {
+          "ap:Boundary": 1,
+          "ap:CalloutFloatingTopicShape": 1,
+          "ap:Connection": 2,
+          "ap:ConnectionGroup": 2,
+          "ap:FloatingTopics": 2,
+          "ap:Hyperlink": 1,
+          "ap:Icon": 1,
+          "ap:Icons": 1,
+          "ap:IconsGroup": 1,
+          "ap:Image": 1,
+          "ap:ImageData": 1,
+          "ap:ImageSize": 1,
+          "ap:Map": 1,
+          "ap:NotesGroup": 1,
+          "ap:NotesXhtmlData": 1,
+          "ap:ObjectReference": 2,
+          "ap:OneBoundary": 1,
+          "ap:OneImage": 1,
+          "ap:OneTopic": 1,
+          "ap:Relationship": 1,
+          "ap:Relationships": 1,
+          "ap:SubTopics": 1,
+          "ap:Task": 1,
+          "ap:Text": 4,
+          "ap:TextLabel": 1,
+          "ap:TextLabels": 1,
+          "ap:Topic": 4,
+          "b": 1,
+          "body": 1,
+          "cor:Uri": 1,
+          "html": 1,
+          "p": 1
+        },
+        "attributes": {
+          "ap:Hyperlink@Url": 1,
+          "ap:Icon@IconType": 1,
+          "ap:ImageData@ImageType": 1,
+          "ap:ImageSize@Height": 1,
+          "ap:ImageSize@Width": 1,
+          "ap:NotesXhtmlData@PreviewPlainText": 1,
+          "ap:ObjectReference@OIdRef": 2,
+          "ap:Task@DeadlineDate": 1,
+          "ap:Task@Resources": 1,
+          "ap:Task@StartDate": 1,
+          "ap:Task@TaskPercentage": 1,
+          "ap:Task@TaskPriority": 1,
+          "ap:Text@PlainText": 4,
+          "ap:TextLabel@TextLabelName": 1,
+          "ap:Topic@OId": 4
+        },
+        "paths": {
+          "/ap:Map": 1,
+          "/ap:Map/ap:FloatingTopics/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:FloatingTopics/ap:Topic/ap:CalloutFloatingTopicShape": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Hyperlink": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:IconsGroup/ap:Icons/ap:Icon": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:NotesGroup/ap:NotesXhtmlData/html/body/p/b": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:OneBoundary/ap:Boundary": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:OneImage/ap:Image/ap:ImageData/cor:Uri": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:OneImage/ap:Image/ap:ImageSize": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:SubTopics/ap:Topic": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Task": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:Text": 1,
+          "/ap:Map/ap:OneTopic/ap:Topic/ap:TextLabels/ap:TextLabel": 1,
+          "/ap:Map/ap:Relationships/ap:Relationship/ap:ConnectionGroup/ap:Connection/ap:ObjectReference": 2
+        },
+        "unrecognizedElements": ["b"],
+        "unrecognizedAttributes": [],
+        "resourceUris": ["mmarch://bin/synthetic-pixel.png"],
+        "relationshipRefs": ["root", "child-a"]
+      },
+      "limitations": [
+        "Synthetic adapter-oriented structure only; no independent MindManager validation.",
+        "Coexistence of individually evidenced structures; inherits note markup and callout write-loss limitations. No summary encoding."
+      ]
+    }
+  ]
+}

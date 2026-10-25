@@ -1,5 +1,16 @@
 # Changelog
 
+## Mindloom — 2026-10-26
+
+Phase 1 Batch 2 adds development infrastructure for a deterministic synthetic MMAP
+inspection corpus: 14 provenance-labelled manifest slots, 13 generated packages,
+and a summary slot pending format evidence. The builder, structural expectations,
+reference checks and reproducibility tests do not establish MindManager compatibility.
+See `phase1-batch2-report.md` for validation evidence. Accepted Batch 1 head
+`802d2b4190f267bd1dc07956c635a202962ea2fb` was integrated into `main` by fast-forward.
+
+## Upstream MindMap Studio history
+
 Notable changes to MindMap Studio. Loosely follows Keep a Changelog; pre-1.0 and
 phase-based. Open work lives in `NEXT_STEPS.md`, not here.
 

@@ -9,6 +9,11 @@ Phase 1 Batch 1 adds independent read-only inspection commands:
 See [the inspector documentation](docs/format/MMAP_INSPECTOR.md) and
 [the Batch 1 report](phase1-batch1-report.md). It does not repair or preserve MMAP data.
 
+Phase 1 Batch 2 adds a reproducible synthetic inspection corpus:
+`pnpm mmap-corpus:generate`. See [the corpus guide](docs/format/MMAP_SYNTHETIC_CORPUS.md)
+and [the Batch 2 report](phase1-batch2-report.md). There are 14 manifest slots;
+13 produce packages, while summary remains pending format evidence.
+
 The audited upstream commit is `65964ac06937514cf9805a2b1198cc20f1e83425`.
 The current MMAP adapter is lossy; high-fidelity compatibility and MindManager acceptance
 have not been established. Software and book content have separate licenses, as documented

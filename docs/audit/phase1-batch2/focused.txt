@@ -1,0 +1,16 @@
+
+ RUN  v2.1.9 <workspace>
+
+ ✓ test/phase0-mmap-audit.test.ts (10 tests) 38ms
+ ✓ test/mmap.test.ts (57 tests | 2 skipped) 79ms
+ ✓ test/mmap-inspector.test.ts (32 tests) 1262ms
+   ✓ MMAP normalization and standalone CLI > runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes 1222ms
+ ✓ test/mmap-corpus.test.ts (24 tests) 4012ms
+   ✓ Mindloom Phase 1 Batch 2 synthetic corpus > generates twice across timezones and runs both real CLI modes for every materialized fixture 3848ms
+
+ Test Files  4 passed (4)
+      Tests  121 passed | 2 skipped (123)
+   Start at  01:57:16
+   Duration  5.04s (transform 325ms, setup 966ms, collect 1.29s, tests 5.39s, environment 1ms, prepare 636ms)
+
+JUNIT report written to <workspace>/.tmp/phase0-toolchain/p2-focused.junit.xml

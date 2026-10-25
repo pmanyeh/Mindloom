@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Asia/Taipei",
+  "repository": "https://github.com/pmanyeh/Mindloom",
+  "branch": "feature/p1-batch2-synthetic-corpus",
+  "acceptedBaseCommit": "802d2b4190f267bd1dc07956c635a202962ea2fb",
+  "acceptedImplementationCommit": "b9c1c99b26e5c7fe51b44afd50d2c775002a8e88",
+  "mainIntegration": "fast-forward; no rewritten shared history",
+  "baselineCiUrl": "https://github.com/pmanyeh/Mindloom/actions/runs/40217549245",
+  "baselineCiConclusion": "success",
+  "platform": "Windows x64",
+  "node": "24.22.1",
+  "pnpm": "11.0.9",
+  "corpus": {
+    "slots": 14,
+    "generated": 13,
+    "pendingSummary": "pending-format-evidence",
+    "byteEquality": "PASS",
+    "normalizedEquality": "PASS",
+    "timezones": "UTC / Asia/Taipei",
+    "lfCrlfEquality": "PASS",
+    "packageSizeRangeBytes": "329..1040"
+  },
+  "focused": {
+    "exitCode": 0,
+    "filesPassed": 4,
+    "testsPassed": 121,
+    "testsSkipped": 2
+  },
+  "newCorpusTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "gate": {
+    "command": "pnpm gate",
+    "exitCode": 0,
+    "filesPassed": 222,
+    "testsPassed": 2550,
+    "testsSkipped": 3,
+    "statements": 90.62,
+    "lines": 90.62,
+    "branches": 87.25,
+    "functions": 78.79,
+    "firstLoadGzipKiB": 182.8,
+    "sizeBudgetKiB": 184,
+    "rawLogSha256": "4cf9e0d2983cb0726c8ff2ad9b73a8601eee958c1ad5b4b191c800ce8c14aabc"
+  },
+  "protectedFiles": "Existing reader/writer, model, Batch 1 inspector/tests, Phase 0 witnesses and lockfile unchanged.",
+  "inspectorRegressions": "none discovered; no inspector changes",
+  "phaseBoundary": "P1C synthetic corpus only; no P1D, Oracle or Phase 2 preservation."
+}

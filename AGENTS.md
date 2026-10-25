@@ -1,6 +1,6 @@
 # Mindloom working rules
 
-Read `MINDLOOM_MASTER_PLAN.md` and the phase reports before changing scope. The user has authorized Phase 1 Batch 1 only: package inspection, XML inventory and initial deterministic normalization. Stop after `phase1-batch1-report.md`; do not begin the full synthetic/real corpus (Batch 2/3) or Phase 2 preservation. Historical Phase 0 documents retain the former Maploom name.
+Read `MINDLOOM_MASTER_PLAN.md` and the phase reports before changing scope. The user has accepted Batch 1 head `802d2b4190f267bd1dc07956c635a202962ea2fb` and authorized its integration into `main`, followed by Phase 1 Batch 2 (P1C synthetic corpus) only. Stop after `phase1-batch2-report.md`; do not begin Batch 3 / P1D real corpus, MindManager Oracle work or Phase 2 preservation. Historical Phase 0 documents retain the former Maploom name.
 
 ## Remote policy (explicit user instruction)
 

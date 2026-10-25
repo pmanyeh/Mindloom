@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mindloom synthetic fixture; no MindManager/Oracle validation. -->
+<ap:Map xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003" xmlns:cor="http://schemas.mindjet.com/MindManager/Core/2003">
+  <ap:OneTopic><ap:Topic OId="root"><ap:Text PlainText="Synthetic root"/>
+    <ap:OneImage><ap:Image>
+      <ap:ImageData ImageType="urn:mindjet:PngImage"><cor:Uri>mmarch://bin/synthetic-pixel.png</cor:Uri></ap:ImageData>
+      <ap:ImageSize Width="1" Height="1"/>
+    </ap:Image></ap:OneImage>
+  </ap:Topic></ap:OneTopic>
+</ap:Map>

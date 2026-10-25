@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "mmap-inspect": "node --experimental-strip-types tools/mmap-cli.ts inspect",
     "mmap-normalize": "node --experimental-strip-types tools/mmap-cli.ts normalize",
+    "mmap-corpus:generate": "node --experimental-strip-types tools/mmap-corpus-cli.ts",
     "typecheck": "tsc --noEmit",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",

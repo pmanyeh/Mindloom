@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mindloom synthetic fixture; no MindManager/Oracle validation. -->
+<ap:Map xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003">
+  <ap:OneTopic><ap:Topic OId="root"><ap:Text PlainText="Synthetic root"/>
+    <ap:SubTopics><ap:Topic OId="level-1"><ap:Text PlainText="Level 1"/>
+      <ap:SubTopics><ap:Topic OId="level-2"><ap:Text PlainText="Level 2"/></ap:Topic></ap:SubTopics>
+    </ap:Topic></ap:SubTopics>
+  </ap:Topic></ap:OneTopic>
+</ap:Map>

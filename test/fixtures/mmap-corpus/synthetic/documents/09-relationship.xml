@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mindloom synthetic fixture; no MindManager/Oracle validation. -->
+<ap:Map xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003">
+  <ap:OneTopic><ap:Topic OId="root"><ap:Text PlainText="Synthetic root"/>
+    <ap:SubTopics><ap:Topic OId="child-a"><ap:Text PlainText="Synthetic child"/></ap:Topic></ap:SubTopics>
+  </ap:Topic></ap:OneTopic>
+  <ap:Relationships><ap:Relationship>
+    <ap:ConnectionGroup><ap:Connection><ap:ObjectReference OIdRef="root"/></ap:Connection></ap:ConnectionGroup>
+    <ap:ConnectionGroup><ap:Connection><ap:ObjectReference OIdRef="child-a"/></ap:Connection></ap:ConnectionGroup>
+  </ap:Relationship></ap:Relationships>
+</ap:Map>

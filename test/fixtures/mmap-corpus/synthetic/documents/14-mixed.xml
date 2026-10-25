@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mindloom synthetic fixture; no MindManager/Oracle validation. -->
+<ap:Map xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003" xmlns:cor="http://schemas.mindjet.com/MindManager/Core/2003">
+  <ap:OneTopic><ap:Topic OId="root"><ap:Text PlainText="Synthetic root"/>
+    <ap:SubTopics><ap:Topic OId="child-a"><ap:Text PlainText="Synthetic child"/></ap:Topic></ap:SubTopics>
+    <ap:NotesGroup><ap:NotesXhtmlData PreviewPlainText="Synthetic note">
+      <html xmlns="http://www.w3.org/1999/xhtml"><body><p>Synthetic <b>note</b></p></body></html>
+    </ap:NotesXhtmlData></ap:NotesGroup>
+    <ap:Hyperlink Url="https://example.invalid/mindloom-fixture"/>
+    <ap:IconsGroup><ap:Icons><ap:Icon IconType="urn:mindjet:Flag"/></ap:Icons></ap:IconsGroup>
+    <ap:TextLabels><ap:TextLabel TextLabelName="synthetic-tag"/></ap:TextLabels>
+    <ap:Task TaskPriority="urn:mindjet:Prio3" TaskPercentage="25" StartDate="2026-01-12T00:00:00" DeadlineDate="2026-01-14T00:00:00" Resources="Synthetic Person"/>
+    <ap:OneImage><ap:Image>
+      <ap:ImageData ImageType="urn:mindjet:PngImage"><cor:Uri>mmarch://bin/synthetic-pixel.png</cor:Uri></ap:ImageData>
+      <ap:ImageSize Width="1" Height="1"/>
+    </ap:Image></ap:OneImage>
+    <ap:OneBoundary><ap:Boundary/></ap:OneBoundary>
+    <ap:FloatingTopics><ap:Topic OId="callout"><ap:Text PlainText="Synthetic callout"/><ap:CalloutFloatingTopicShape/></ap:Topic></ap:FloatingTopics>
+  </ap:Topic></ap:OneTopic>
+  <ap:Relationships><ap:Relationship>
+    <ap:ConnectionGroup><ap:Connection><ap:ObjectReference OIdRef="root"/></ap:Connection></ap:ConnectionGroup>
+    <ap:ConnectionGroup><ap:Connection><ap:ObjectReference OIdRef="child-a"/></ap:Connection></ap:ConnectionGroup>
+  </ap:Relationship></ap:Relationships>
+  <ap:FloatingTopics><ap:Topic OId="floating"><ap:Text PlainText="Synthetic floating topic"/></ap:Topic></ap:FloatingTopics>
+</ap:Map>

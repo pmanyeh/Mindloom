@@ -1,0 +1,76 @@
+{
+  "corpus": "mindloom-phase1-synthetic",
+  "outputDirectory": ".tmp/mmap-corpus/synthetic",
+  "fixtures": [
+    {
+      "id": "01-root-only",
+      "status": "generated",
+      "sha256": "21e59f6b0ded43fdddda8b7c8e64cca5db9ff69724acaef12fce105efffd1a92"
+    },
+    {
+      "id": "02-three-level-tree",
+      "status": "generated",
+      "sha256": "07575a8f6307ee25e0c73af821c041952939da1bea55dab029c9eef9b8d6b6ca"
+    },
+    {
+      "id": "03-notes",
+      "status": "generated",
+      "sha256": "ec9a2138e0524507efa0bec4dd542d11f63c9113bf0dda9de6240aed4f2ea2c4"
+    },
+    {
+      "id": "04-links",
+      "status": "generated",
+      "sha256": "b1206113a2100cbdfdb989c487ca099cbd3e8d189be9da136158fd45fab7caf1"
+    },
+    {
+      "id": "05-icons",
+      "status": "generated",
+      "sha256": "4782b81be34159d6b74ed3c2ef065f25dc5ba9ff6936a2f3b5e552a55c5aa09f"
+    },
+    {
+      "id": "06-tags",
+      "status": "generated",
+      "sha256": "e8dcf34c1bfcb0a268cc0e61ad9ed5a7d1c1b6debf7ad746126ee3a1a4bc4445"
+    },
+    {
+      "id": "07-task",
+      "status": "generated",
+      "sha256": "6a6e16b3a4d7acabaf783da5d90131812578b545fd3413daf93784f800f76723"
+    },
+    {
+      "id": "08-image",
+      "status": "generated",
+      "sha256": "af73a5db1ff9213abbd9dcba7bcf6731a27f354ee8b7debfac0f8d6b642c9c24"
+    },
+    {
+      "id": "09-relationship",
+      "status": "generated",
+      "sha256": "877a5357182d30cc90b749494656a5b716591702bf7b42b54f51f4d3d9f13f64"
+    },
+    {
+      "id": "10-boundary",
+      "status": "generated",
+      "sha256": "4158d736f253350a0de545155ab790375b4dc3a70a89b640323afb783a289465"
+    },
+    {
+      "id": "11-callout",
+      "status": "generated",
+      "sha256": "0ae9bf0cb5e2698798f11c3b4707167ab63f09bf836508141358b807a6bf430c"
+    },
+    {
+      "id": "12-floating",
+      "status": "generated",
+      "sha256": "fb712d5894b430ccf7901d572c551805360607b177e72edb1f9bbf8a72f26bab"
+    },
+    {
+      "id": "13-summary",
+      "status": "pending-format-evidence",
+      "sha256": null
+    },
+    {
+      "id": "14-mixed",
+      "status": "generated",
+      "sha256": "a0fc69078278a8fd672004a22171f1e0ed9a8b47383c837646f7725d56d9134b"
+    }
+  ]
+}
