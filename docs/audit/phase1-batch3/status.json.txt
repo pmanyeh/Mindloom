@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "phase1Result": "BLOCKED ON REAL-CORPUS ACQUISITION",
+  "realSampleCount": 0,
+  "inspectedRealSampleDeclarations": 0,
+  "targetMatrix": [
+    {
+      "id": "modern-minimal",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "modern-feature-mixed",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "deep-map",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "wide-map",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "large-map",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "multiple-images",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "attachment",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "legacy",
+      "status": "pending",
+      "sampleIds": []
+    }
+  ],
+  "comparison": [
+    {
+      "syntheticId": "01-root-only",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "02-three-level-tree",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "03-notes",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "04-links",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "05-icons",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "06-tags",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "07-task",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "08-image",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "09-relationship",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "10-boundary",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "11-callout",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "12-floating",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "13-summary",
+      "syntheticStatus": "pending-format-evidence",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    },
+    {
+      "syntheticId": "14-mixed",
+      "syntheticStatus": "generated",
+      "realSampleIds": [],
+      "category": "NO_REAL_SAMPLE",
+      "reason": "No genuine real sample has been acquired for this feature.",
+      "observedPackagePaths": null,
+      "observedNamespaces": null,
+      "observedExtraStructure": null
+    }
+  ],
+  "featureInventory": [
+    {
+      "feature": "Root / text",
+      "syntheticEvidence": "01-root-only: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "parsed",
+      "currentWriter": "emitted; IDs regenerated",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Topic hierarchy",
+      "syntheticEvidence": "02-three-level-tree: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "parsed",
+      "currentWriter": "emitted",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Notes",
+      "syntheticEvidence": "03-notes: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "XHTML flattened to text",
+      "currentWriter": "preview text only",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Hyperlinks",
+      "syntheticEvidence": "04-links: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "primary safe URL",
+      "currentWriter": "primary safe URL",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Icons / markers",
+      "syntheticEvidence": "05-icons: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "curated mapping",
+      "currentWriter": "curated mapping only",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Tags",
+      "syntheticEvidence": "06-tags: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "names only",
+      "currentWriter": "names only",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Tasks",
+      "syntheticEvidence": "07-task: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "selected fields; dates truncated",
+      "currentWriter": "selected fields; progress rounded",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Images",
+      "syntheticEvidence": "08-image: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "selected raster images",
+      "currentWriter": "PNG/JPEG subset; metadata rewritten",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Relationships",
+      "syntheticEvidence": "09-relationship: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "endpoints/selected style",
+      "currentWriter": "endpoints/label; style lost",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Boundaries",
+      "syntheticEvidence": "10-boundary: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "subtree/selected style",
+      "currentWriter": "exact subtree only; style lost",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Callouts",
+      "syntheticEvidence": "11-callout: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "lifted to parent annotations",
+      "currentWriter": "omitted",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Floating topics",
+      "syntheticEvidence": "12-floating: generated",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "detached trees; position lost",
+      "currentWriter": "detached trees; position lost",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Summary",
+      "syntheticEvidence": "13-summary: pending-format-evidence",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "not parsed",
+      "currentWriter": "omitted",
+      "unknownPreservation": "NO",
+      "status": "PENDING_FORMAT_EVIDENCE",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Attachments",
+      "syntheticEvidence": "static audit / existing unit tests only",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "recognized file payloads",
+      "currentWriter": "omitted",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Styles / layout",
+      "syntheticEvidence": "static audit / existing unit tests only",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "selected explicit styles",
+      "currentWriter": "mostly omitted/defaulted",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    },
+    {
+      "feature": "Unknown extensions",
+      "syntheticEvidence": "static audit / existing unit tests only",
+      "realEvidence": "NO_REAL_SAMPLE",
+      "currentParser": "not retained",
+      "currentWriter": "not preserved",
+      "unknownPreservation": "NO",
+      "status": "SYNTHETIC_OR_STATIC_ONLY",
+      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+    }
+  ],
+  "summaryDiscovery": "pending-format-evidence; no observed representation",
+  "noOpBaseline": "NOT_OBSERVED_ON_REAL_INPUT"
+}

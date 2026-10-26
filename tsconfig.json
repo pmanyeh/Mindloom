@@ -16,5 +16,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "test", "*.config.ts", "tools/mmap-cli.ts", "tools/mmap-corpus-cli.ts"]
+  "include": [
+    "src",
+    "test",
+    "*.config.ts",
+    "tools/mmap-cli.ts",
+    "tools/mmap-corpus-cli.ts",
+    "tools/mmap-real-cli.ts"
+  ]
 }

@@ -1,0 +1,512 @@
+./tools/phase0/pnpm-local.cmd : $ tsc --noEmit && biome check . && knip && node scripts/check-feature-coverage.mjs && v
+itest run --coverage && vite build && node scripts/size-budget.mjs
+位於 線路:2 字元:585
++ ... usedExit }; ./tools/phase0/pnpm-local.cmd gate *> .tmp/phase0-toolcha ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ($ tsc --noEmit ...size-budget.mjs:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Checked 533 files in 334ms. No fixes applied.
+✓ feature catalogue: 256 features — manual 256 (100%), book 248 (96.9%), book+example 150 (58.6%)
+✓ catalogue reviewed through 470 changelog bullets (CHANGELOG has 470)
+
+ RUN  v2.1.9 <workspace>
+      Coverage enabled with v8
+
+ ✓ test/flow-key-intent.test.ts (15 tests) 14ms
+ ✓ test/branch-geometry.test.ts (21 tests) 14ms
+ ✓ test/outline.test.ts (23 tests) 26ms
+ ✓ test/filter.test.ts (24 tests) 14ms
+ ✓ test/flow-project.test.ts (26 tests) 17ms
+ ✓ test/flow-layout.test.ts (20 tests) 19ms
+ ✓ test/mapStore.test.ts (35 tests) 101ms
+ ✓ test/flow-ops.test.ts (206 tests) 146ms
+ ✓ test/mmap.test.ts (57 tests | 2 skipped) 148ms
+ ✓ test/editor-commands.test.ts (22 tests) 213ms
+ ✓ test/rules.test.ts (19 tests) 14ms
+ ✓ test/connector-routing.test.ts (9 tests) 708ms
+   ✓ obstacle-aware branch routing > fuzz: clear-or-straight holds over thousands of random layouts (no displaced-crossing) 680ms
+ ✓ test/i18n-no-hardcoded-strings.test.ts (103 tests) 998ms
+ ✓ test/flow-sync.test.ts (18 tests) 16ms
+ ✓ test/flow-shapes.test.ts (17 tests) 30ms
+ ✓ test/smmx.test.ts (15 tests | 1 skipped) 37ms
+ ✓ test/xlsx-import.test.ts (16 tests) 98ms
+ ✓ test/flow-floating.test.ts (17 tests) 10ms
+ ✓ test/search.test.ts (24 tests) 17ms
+ ✓ test/useMapExports-integration.test.ts (24 tests) 11ms
+ ✓ test/pptx.test.ts (18 tests) 315ms
+ ✓ test/xmind.test.ts (17 tests) 50ms
+ ✓ test/canvas-shapes.test.ts (26 tests) 25ms
+ ✓ test/normalize.test.ts (11 tests) 13ms
+ ✓ test/docx-import.test.ts (13 tests) 55ms
+ ✓ test/flow-build-state.test.ts (8 tests) 17ms
+ ✓ test/phase0-mmap-audit.test.ts (10 tests) 57ms
+ ✓ test/mindmup.test.ts (19 tests) 12ms
+ ✓ test/board.test.ts (16 tests) 10ms
+ ✓ test/mindmeister.test.ts (16 tests) 34ms
+ ✓ test/progress.test.ts (18 tests) 10ms
+ ✓ test/line-jumps.test.ts (8 tests) 10ms
+ ✓ test/mmap-real-corpus.test.ts (21 tests) 1729ms
+   ✓ local-only intake — manufactured privacy/security probes > runs status/error CLI paths and the opt-in current importer in a plain Node process 1579ms
+ ✓ test/interactive-html.test.ts (12 tests) 12ms
+ ✓ test/i18n-frozen-constants.test.ts (4 tests) 232ms
+ ✓ test/xmind-legacy.test.ts (11 tests) 36ms
+ ✓ test/wrap-text.test.ts (14 tests) 10ms
+ ✓ test/deck.test.ts (10 tests) 11ms
+ ✓ test/ithoughts.test.ts (12 tests) 38ms
+ ✓ test/link-autocomplete.test.ts (15 tests) 10ms
+ ✓ test/arrowhead.test.ts (9 tests) 9ms
+ ✓ test/mmap-inspector.test.ts (32 tests) 2377ms
+   ✓ MMAP normalization and standalone CLI > runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes 2303ms
+ ✓ test/taskDate.test.ts (13 tests) 41ms
+ ✓ test/file-roundtrip.test.ts (2 tests) 15ms
+ ✓ test/start.test.ts (13 tests) 13ms
+ ✓ test/markdown.test.ts (11 tests) 9ms
+ ✓ test/layout-preview.test.ts (9 tests) 24ms
+ ✓ test/examples.test.ts (85 tests) 31ms
+ ✓ test/flow-links.test.ts (11 tests) 15ms
+ ✓ test/first-load-budget.test.ts (3 tests) 115ms
+ ✓ test/templates.test.ts (10 tests) 17ms
+ ✓ test/import-dispatch.test.ts (8 tests) 178ms
+ ✓ test/flow-selection-resolve.test.ts (8 tests) 13ms
+ ✓ test/flow-pure-helpers.test.ts (10 tests) 9ms
+ ✓ test/stickers.test.ts (12 tests) 27ms
+ ✓ test/pasteTable.test.ts (11 tests) 14ms
+ ✓ test/slides.test.ts (8 tests) 8ms
+ ✓ test/editor-tokens.test.ts (8 tests) 9ms
+ ✓ test/marker-icons.test.ts (13 tests) 13ms
+ ✓ test/flow-callouts.test.ts (6 tests) 10ms
+ ✓ test/presenter.test.ts (9 tests) 9ms
+ ✓ test/flow-balance.test.ts (4 tests) 8ms
+ ✓ test/ooxml-non-latin.test.ts (3 tests) 54ms
+ ✓ test/pasteOutline.test.ts (8 tests) 9ms
+ ✓ test/xlsx.test.ts (7 tests) 42ms
+ ✓ test/markmap.test.ts (9 tests) 8ms
+ ✓ test/flow-topic-fill.test.ts (7 tests) 9ms
+ ✓ test/book.test.ts (8 tests) 61ms
+ ✓ test/version-store.test.ts (5 tests) 59ms
+ ✓ test/mobile-sheets.test.ts (5 tests) 10ms
+ ✓ test/stats.test.ts (3 tests) 7ms
+ ✓ test/editor-keys.test.ts (5 tests) 11ms
+ ✓ test/editor-icons.test.tsx (6 tests) 34ms
+ ✓ test/mermaid.test.ts (6 tests) 9ms
+ ✓ test/agenda.test.ts (3 tests) 9ms
+ ✓ test/legend.test.ts (3 tests) 22ms
+ ✓ test/wrap-width.test.ts (8 tests) 6ms
+ ✓ test/branch-clipboard.test.ts (6 tests) 8ms
+ ✓ test/contrast.test.ts (9 tests) 8ms
+ ✓ test/selection-info.test.ts (4 tests) 32ms
+ ✓ test/freemind.test.ts (5 tests) 14ms
+ ✓ test/opml.test.ts (5 tests) 14ms
+ ✓ test/flow-brace.test.ts (4 tests) 6ms
+ ✓ test/slash-commands.test.ts (7 tests) 7ms
+ ✓ test/flow-backdrop.test.ts (6 tests) 10ms
+ ✓ test/geometry.test.ts (5 tests) 5ms
+ ✓ test/relate-grip-geometry.test.ts (4 tests) 5ms
+ ✓ test/notes-appendix.test.ts (3 tests) 7ms
+ ✓ test/docx.test.ts (6 tests) 29ms
+ ✓ test/navHistory.test.ts (6 tests) 7ms
+ ✓ test/tag-colors.test.ts (5 tests) 9ms
+ ✓ test/export-locale.test.ts (3 tests) 23ms
+ ✓ test/deck-edit.test.ts (7 tests) 7ms
+ ✓ test/i18n-frozen-ratchet.test.ts (3 tests) 5ms
+ ✓ test/queryParser.test.ts (6 tests) 8ms
+ ✓ test/tableExport.test.ts (4 tests) 7ms
+ ✓ test/urlSafety.test.ts (4 tests) 7ms
+ ✓ test/flow-snap.test.ts (4 tests) 6ms
+ ✓ test/taskDate-timezone.test.ts (1 test) 32ms
+ ✓ test/ooxml.test.ts (6 tests) 17ms
+ ✓ test/rollup.test.ts (4 tests) 8ms
+ ✓ test/drop-target.test.ts (4 tests) 5ms
+ ✓ test/navigation-denylist.test.ts (3 tests) 5ms
+ ✓ test/node-chrome.test.ts (8 tests) 6ms
+ ✓ test/html-escape.test.ts (4 tests) 6ms
+ ✓ test/view-only.test.ts (4 tests) 5ms
+ ✓ test/library.test.ts (6 tests) 9ms
+ ✓ test/link-classify.test.ts (6 tests) 6ms
+ ✓ test/file-name.test.ts (6 tests) 7ms
+ ✓ test/priority.test.ts (5 tests) 9ms
+ ✓ test/animate-layout.test.ts (5 tests) 6ms
+ ✓ test/flow-size-estimate.test.ts (2 tests) 11ms
+ ✓ test/wrap-handle-geometry.test.ts (3 tests) 4ms
+ ✓ test/flow-history.test.ts (4 tests) 5ms
+ ✓ test/panel-labels.test.ts (3 tests) 7ms
+ ✓ test/tab-coordination.test.ts (3 tests) 5ms
+ ✓ test/mapParts.test.ts (3 tests) 10ms
+ ✓ test/design-preview.test.ts (2 tests) 7ms
+ ✓ test/json.test.ts (4 tests) 7ms
+ ✓ test/present-timer.test.ts (4 tests) 5ms
+ ✓ test/markerSuggest.test.ts (4 tests) 9ms
+ ✓ test/savedViews.test.ts (4 tests) 7ms
+ ✓ test/history-playback.test.ts (8 tests) 7ms
+ ✓ test/html.test.ts (4 tests) 5ms
+ ✓ test/shortcut-bindings.test.ts (2 tests) 6ms
+ ✓ test/designs.test.ts (2 tests) 4ms
+ ✓ test/textbundle.test.ts (3 tests) 12ms
+ ✓ test/theme.test.ts (2 tests) 7ms
+ ✓ test/standalone.test.ts (3 tests) 6ms
+ ✓ test/icons.test.ts (2 tests) 5ms
+ ✓ test/virtualize.test.ts (1 test) 5ms
+ ✓ test/mmap-corpus.test.ts (24 tests) 7789ms
+   ✓ Mindloom Phase 1 Batch 2 synthetic corpus > generates twice across timezones and runs both real CLI modes for every materialized fixture 7362ms
+ ✓ test/use-disk-file.test.tsx (17 tests) 75ms
+ ✓ test/rich-text-commands.test.ts (28 tests) 106ms
+ ✓ test/dashboard.test.ts (13 tests) 300ms
+ ✓ test/book-build.test.ts (3 tests) 4653ms
+   ✓ EPUB builder > packages mimetype first, one xhtml per chapter, and the stable id 310ms
+   ✓ EPUB builder > is byte-deterministic across builds (no wall-clock leak) 673ms
+   ✓ PDF builder > has a cover + TOC + a page per chapter, with metadata and bookmarks 3668ms
+ ✓ test/usePanels.test.ts (21 tests) 74ms
+ ✓ test/flow-export.test.ts (72 tests) 95ms
+stderr | test/useMapExports.test.tsx > useMapExports — PDF print path > appends a hidden print iframe with the rendered
+ SVG instead of downloading
+Not implemented: Window's focus() method
+Not implemented: Window's print() method
+
+ ✓ test/i18n.test.ts (35 tests) 862ms
+   ✓ catalogue > has no dead keys — every catalogue entry is referenced by the app 362ms
+   ✓ bundle locality > no EAGERLY-REACHED file imports a lazy catalogue 316ms
+ ✓ test/useMapExports.test.tsx (36 tests) 697ms
+ ✓ test/fileSystem.test.ts (23 tests) 27ms
+ ✓ test/hooks.test.tsx (13 tests) 102ms
+ ✓ test/map-actions.test.tsx (12 tests) 41ms
+ ✓ test/menu-primitive.test.tsx (19 tests) 2535ms
+ ✓ test/settings-file.test.ts (12 tests) 17ms
+ ✓ test/noteFormat.test.ts (25 tests) 70ms
+ ✓ test/map-panel.test.tsx (17 tests) 2893ms
+   ✓ MapPanel > commits the title via onRenameMap on blur (and not on every keystroke) 598ms
+   ✓ MapPanel > reflects + drives theme, layout, background colour and line-jumps 623ms
+ ✓ test/command-palette.test.tsx (11 tests) 1149ms
+   ✓ CommandPalette (generic) > matches hidden keywords and surfaces a Recent section after use (#12) 341ms
+ ✓ test/i18n-pseudo-render.test.tsx (6 tests) 361ms
+ ✓ test/presentation.test.tsx (8 tests) 2031ms
+   ✓ Presentation overlay > renders the overview slide then navigates branches via the buttons 651ms
+   ✓ Presentation overlay > blacks out on B and whites out on W, and any key (or click) resumes 312ms
+   ✓ Presentation overlay > sets a talk budget via the presenter stepper (drives pacing colour) 329ms
+ ✓ test/start-library-sections.test.tsx (18 tests) 4286ms
+   ✓ MapCard > renders title + singular meta and opens via the thumbnail 399ms
+   ✓ MapCard > falls back to (untitled) and fires every kebab action 320ms
+   ✓ Templates section > renders a card per non-blank template and opens one through buildTemplate 461ms
+   ✓ Templates section > filters by search query and shows the empty state when nothing matches 571ms
+   ✓ AllMaps section > counts maps, sorts by the chosen key, and toggles grid ↔ list 498ms
+   ✓ AllMaps section > filters the library by a title search and shows a no-match state 489ms
+   ✓ AllMaps section > drills into a folder and back via the breadcrumb (C2) 357ms
+   ✓ AllMaps section > opens the New-folder prompt and the Move-to-folder picker (C2) 490ms
+ ✓ test/use-idb-autosave.test.tsx (8 tests) 55ms
+ ✓ test/use-version-history.test.tsx (7 tests) 53ms
+ ✓ test/image.test.ts (10 tests) 18ms
+ ✓ test/use-clipboard-image-paste.test.tsx (8 tests) 116ms
+ ✓ test/settings-dialog.test.tsx (10 tests) 1310ms
+   ✓ SettingsDialog > fires each reset / clear action from its button 362ms
+ ✓ test/use-guided-walk.test.tsx (7 tests) 58ms
+ ✓ test/find-replace-overlay.test.tsx (7 tests) 1126ms
+   ✓ FindReplaceOverlay > submits the find form and runs replace 381ms
+   ✓ FindReplaceOverlay > discloses the 'all matches' list and jumps to a clicked row 301ms
+ ✓ test/i18n-nodes.test.tsx (7 tests) 97ms
+ ✓ test/saved-views-hook.test.tsx (8 tests) 49ms
+ ✓ test/start-extra.test.tsx (10 tests) 1464ms
+   ✓ StartSidebar > renders nav + fires navigation and New map 520ms
+ ✓ test/useOpenDocuments.test.ts (10 tests) 189ms
+ ✓ test/start-sections.test.tsx (10 tests) 3009ms
+   ✓ CaptureCard > grows a map from a typed topic (button + Enter + example pill) 894ms
+   ✓ CaptureCard > turns a pasted outline into a map 332ms
+   ✓ Examples section > lists the worked examples (the same set as the editor's New menu) and opens one 696ms
+   ✓ Examples section > filters examples by a search query 410ms
+ ✓ test/overlay-inspector.test.tsx (8 tests) 2111ms
+   ✓ OverlayInspector > commits a boundary/summary label on Enter (trimmed) 760ms
+   ✓ OverlayInspector > uses a textarea for a callout and commits its text on blur 397ms
+ ✓ test/kanban.test.tsx (6 tests) 870ms
+ ✓ test/use-find.test.ts (7 tests) 50ms
+ ✓ test/pwaUpdate.test.ts (10 tests) 11ms
+ ✓ test/svgSanitize.test.ts (8 tests) 30ms
+ ✓ test/edge-inspector.test.tsx (10 tests) 1994ms
+   ✓ EdgeInspector > commits the label on Enter 420ms
+   ✓ EdgeInspector > fires onSetStyle for width, dash, and a colour reset 475ms
+ ✓ test/use-named-styles.test.tsx (5 tests) 49ms
+ ✓ test/editor-dialogs.test.tsx (5 tests) 1165ms
+   ✓ editor dialogs > opens the native dialog, so role queries can see its controls 400ms
+   ✓ editor dialogs > editorPrompt resolves the entered text, seeded with the default value 429ms
+ ✓ test/DocumentTabs.test.tsx (6 tests) 362ms
+ ✓ test/local-prefs.test.ts (4 tests) 135ms
+ ✓ test/outline-tree.test.tsx (5 tests) 663ms
+   ✓ OutlinePanel accessible tree > exposes role=tree with treeitems carrying aria-level and aria-expanded 321ms
+ ✓ test/outline-touch-drag.test.tsx (3 tests) 310ms
+ ✓ test/use-paste-outline.test.tsx (6 tests) 47ms
+ ✓ test/panel-dock.test.tsx (6 tests) 554ms
+   ✓ PanelDock > renders one tab per panel and shows only the active body 376ms
+ ✓ test/rich-text.test.ts (11 tests) 113ms
+ ✓ test/map-dialogs.test.tsx (4 tests) 1051ms
+   ✓ MapDialogs > renames a map through the themed dialog (seeded with the current title) 785ms
+ ✓ test/i18n-init-order.test.ts (3 tests) 20ms
+ ✓ test/attachment.test.ts (6 tests) 14ms
+ ✓ test/use-sheet-drag.test.tsx (5 tests) 132ms
+stderr | test/theme-designer-dialog.test.tsx > ThemeDesignerDialog (C3) > exports the current theme as a .json download
+Not implemented: navigation to another Document
+
+ ✓ test/use-format-painter.test.tsx (5 tests) 46ms
+ ✓ test/theme-designer-dialog.test.tsx (4 tests) 1830ms
+   ✓ ThemeDesignerDialog (C3) > saves a named theme to storage and surfaces it, then deletes it 1074ms
+ ✓ test/icon-rail.test.tsx (7 tests) 999ms
+   ✓ IconRail > fires onHome from the brand mark 397ms
+ ✓ test/panels.test.tsx (103 tests) 14992ms
+   ✓ OutlinePanel > renders the filter box and a row for each topic 517ms
+   ✓ InfoPanel > shows a Minimize control and the Details + Style tabs for the selected node 340ms
+   ✓ InfoPanel > inserts a markdown link from the note toolbar when nothing is selected (🔗 Link) 393ms
+   ✓ InfoPanel > hides the Details markers/tags/priority once the Style tab is active (#7) 318ms
+   ✓ InfoPanel > bulk mode shows tri-state markers + tags on Details and toggles them across the selection 361ms
+   ✓ InfoPanel > offers an 'Open in dock' button on the Notes tab that calls onExpandNote (P6) 327ms
+   ✓ InfoPanel > lists incoming backlinks and follows one on click (navigation, not onJump) 342ms
+   ✓ OutlinePanel (interaction) > commits an inline rename on double-click + Enter 460ms
+   ✓ InfoPanel (interaction) > adds and removes additional hyperlinks (multiple links per topic) 769ms
+ ✓ test/use-note-editor.test.tsx (4 tests) 56ms
+ ✓ test/toolbar.test.tsx (31 tests) 15575ms
+   ✓ Toolbar — row 1 (file/identity) > renders the map switcher, +New, All maps, Export and More 531ms
+   ✓ Toolbar — row 1 (file/identity) > switches maps + opens All maps 340ms
+   ✓ Toolbar — row 1 (file/identity) > disables Undo/Redo when there's no history, enables + fires them when there is (#8) 400ms
+   ✓ Toolbar — Export menu > opens and dispatches per-format handlers 509ms
+   ✓ Toolbar — Export menu > pins the last-used format atop the menu and re-runs it 587ms
+   ✓ Toolbar — Export menu > keeps resolving the last-used format across a locale change 652ms
+   ✓ Toolbar — More menu > dispatches map + file actions 1870ms
+   ✓ Toolbar — More menu > exposes Settings + Keyboard shortcuts and shows shortcut chips on the File items (#P4) 610ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > View menu: fit / collapse / expand + the labelled display toggles (#4) 1323ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > View menu: the numbering-style toggle appears once numbering is on (#4) 361ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > View menu: the Arrange group shows only in free-canvas mode (#4) 1113ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > Panels menu toggles each side panel 371ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > Insert menu: sticky note + roll-up refresh 548ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > Insert: Map parts + Templates are fly-out submenus, not a flat inline list 840ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > Canvas menu: free layout + opens the Map panel for styling (T5, T3-25) 309ms
+   ✓ Toolbar — row 2 (view/edit/canvas) > layout select + quick add 382ms
+   ✓ Toolbar — menu a11y parity net > every menu trigger advertises aria-haspopup=menu and toggles aria-expanded on open 1683ms
+   ✓ Toolbar — menu a11y parity net > compacts the toolbar in mobile mode (primary menus inline, extras in the Options menu) 342ms
+   ✓ Toolbar — full screen > View → Full screen toggles it; a phone also gets a one-tap row-1 button 302ms
+ ✓ test/use-toast.test.tsx (5 tests) 52ms
+ ✓ test/use-long-press.test.ts (5 tests) 41ms
+ ✓ test/bulk-node-menu.test.tsx (2 tests) 858ms
+   ✓ BulkNodeMenu > shows the selection count and calls onDelete from Delete-N 343ms
+   ✓ BulkNodeMenu > wires group / markers / priority / colour through to apply across the selection 513ms
+ ✓ test/install-prompt.test.tsx (4 tests) 572ms
+   ✓ InstallButton / useInstallPrompt (O2) > shows the Install button after a beforeinstallprompt and runs prompt() on click 481ms
+stderr | test/branch-export-dialog.test.tsx > BranchExportDialog (B4) > fires a model-backed export (scoped) and closes
+Not implemented: navigation to another Document
+
+ ✓ test/shortcuts-dialog.test.tsx (3 tests) 739ms
+   ✓ ShortcutsDialog (#2) > closes via the ✕ button 389ms
+ ✓ test/branch-export-dialog.test.tsx (2 tests) 704ms
+   ✓ BranchExportDialog (B4) > titles the dialog with the branch and lists every format 567ms
+ ✓ test/custom-themes.test.ts (4 tests) 8ms
+ ✓ test/search-results.test.tsx (5 tests) 872ms
+   ✓ SearchResults > renders topic, map, breadcrumb and snippet; picks the row's payload 482ms
+ ✓ test/brainstorm-timer.test.tsx (3 tests) 948ms
+   ✓ BrainstormTimer > starts at idle and opens a preset menu 615ms
+ ✓ test/use-inbox.test.ts (4 tests) 161ms
+ ✓ test/use-high-contrast.test.ts (4 tests) 40ms
+ ✓ test/use-focus-hotkey.test.tsx (4 tests) 64ms
+ ✓ test/natural-date-input.test.tsx (4 tests) 1314ms
+   ✓ NaturalDateInput > resolves natural language on Enter and commits the ISO date 537ms
+   ✓ NaturalDateInput > passes an ISO date straight through on blur 352ms
+   ✓ NaturalDateInput > leaves the field unchanged and flags invalid input 325ms
+ ✓ test/use-appearance.test.tsx (6 tests) 32ms
+ ✓ test/canvas-overlays-sr.test.tsx (2 tests) 258ms
+ ✓ test/trash-section.test.tsx (2 tests) 520ms
+   ✓ Trash section > lists trashed maps and wires restore / delete-forever / empty (each refreshes the library) 464ms
+ ✓ test/use-reduced-motion.test.ts (3 tests) 39ms
+ ✓ test/timeAgo.test.ts (4 tests) 35ms
+ ✓ test/canvas-relationships-sr.test.tsx (3 tests) 259ms
+ ✓ test/pdf.test.ts (3 tests) 65ms
+ ✓ test/collation-sites.test.ts (2 tests) 21ms
+ ✓ test/start-toast.test.tsx (3 tests) 408ms
+ ✓ test/download.test.ts (1 test) 15ms
+ ✓ test/search-history.test.ts (6 tests) 7ms
+ ✓ test/use-fullscreen.test.ts (3 tests) 38ms
+ ✓ test/flow-node-popover.test.tsx (2 tests) 26ms
+ ✓ test/use-command-palette-hotkey.test.tsx (3 tests) 32ms
+ ✓ test/first-run-card.test.tsx (2 tests) 206ms
+ ✓ test/use-latest-ref.test.tsx (2 tests) 28ms
+ ✓ test/error-boundary.test.tsx (2 tests) 308ms
+ ✓ test/flow-canvas-overlays.test.tsx (2 tests) 19ms
+ ✓ test/mobile-sheet-scrim.test.tsx (1 test) 164ms
+ ✓ test/breadcrumb.test.tsx (3 tests) 338ms
+ ✓ test/app-integration.test.tsx (14 tests) 31921ms
+   ✓ App (integration) > boots to the Start screen and opens a map into the editor 535ms
+   ✓ App (integration) > opens + closes the ⌘K command palette 442ms
+   ✓ App (integration) > toggles a side panel into the tabbed dock via the Panels menu 2954ms
+   ✓ App (integration) > runs find then replace-all from the overlay without crashing 4161ms
+   ✓ App (integration) > undo / redo from the header toolbar 2513ms
+   ✓ App (integration) > drives the View, Canvas and Export menus without crashing 5574ms
+   ✓ App (integration) > opens the More menu and starts + exits Present mode 2630ms
+   ✓ App (integration) > imports a file, surfaces the lossy-import note, and dismisses the banner 2641ms
+   ✓ App (integration) > opens Settings with the Ctrl/⌘+, shortcut 671ms
+   ✓ App (integration) > opens Settings from the rail and drives its actions 2396ms
+   ✓ App (integration) > selects a topic and drives inspector edits (tag, progress, priority) 2935ms
+   ✓ App (integration) > records back/forward navigation and copies a deep-link to the selected topic 2168ms
+   ✓ App (integration) > flushes a pending debounced autosave the instant the tab is hidden 1276ms
+   ✓ App (integration) > returns to the Start screen via Home and back into a map 1024ms
+ ✓ test/flowmindmap.test.tsx (67 tests) 32709ms
+   ✓ FlowMindMap canvas > mounts and exposes the imperative handle 640ms
+   ✓ FlowMindMap canvas > renders a topic at its per-topic wrap width, else the 320 cap (canvas==export) 320ms
+   ✓ FlowMindMap canvas > runs the selection-free handle actions, mutating the doc via onChange 2080ms
+   ✓ FlowMindMap canvas > focuses a node and applies the selection-dependent handle actions to it 2221ms
+   ✓ FlowMindMap canvas > drives keyboard tree-building and undo / redo 658ms
+   ✓ FlowMindMap canvas > keyboard branch clipboard: copy, duplicate-as-sibling, and paste under the selection 726ms
+   ✓ FlowMindMap canvas > quickAdd splits a pasted multi-line outline into a subtree (burst capture) 515ms
+   ✓ FlowMindMap canvas > quickAdd keeps a single line verbatim (no markdown-marker stripping) 426ms
+   ✓ FlowMindMap canvas > addFloatingTopic files inbox text as a detached floating topic 361ms
+   ✓ FlowMindMap canvas > right-clicks the empty pane → a canvas menu (add topic / fit / reset zoom) 397ms
+   ✓ FlowMindMap canvas > the pane menu pastes a copied branch as a floating topic 466ms
+   ✓ FlowMindMap canvas > the status-bar zoom % opens the zoom menu (replaces the +/−/fit stack and minimap button) 852ms
+   ✓ FlowMindMap canvas > Ctrl+Enter adds a child of the selected node (plain Enter still adds a sibling) 454ms
+   ✓ FlowMindMap canvas > type-to-edit: typing a printable char on a selected node enters edit seeded with that char 336ms
+   ✓ FlowMindMap canvas > type-to-edit ignores modified keys (Ctrl/Cmd shortcuts don't open the editor) 315ms
+   ✓ FlowMindMap canvas > slash menu: typing / opens the command menu; Enter runs a command and preserves the topic 730ms
+   ✓ FlowMindMap canvas > slash menu: filtering to a command and Enter applies its effect (Due today) 644ms
+   ✓ FlowMindMap canvas > link autocomplete: typing [[ opens a topic picker; selecting inserts the name + attaches the link 609ms
+   ✓ FlowMindMap canvas > link autocomplete: a second link on the same node lands in the extras (hyperlinks[]) 583ms
+   ✓ FlowMindMap canvas > link autocomplete: Escape dismisses the picker and stays closed until the text changes 443ms
+   ✓ FlowMindMap canvas > slash menu: Escape dismisses it and it stays closed on keyup 435ms
+   ✓ FlowMindMap canvas > link autocomplete preserves rich formatting in the topic (splices only the token) 544ms
+   ✓ FlowMindMap canvas > Delete removes a node with children immediately (no modal) + reports it for the undo toast (#9) 390ms
+   ✓ FlowMindMap canvas > Delete on a childless node deletes immediately and reports it (#9) 502ms
+   ✓ FlowMindMap canvas > deleting the central root is refused with a hint, not a silent no-op 379ms
+   ✓ FlowMindMap canvas > undo restores the selection STATE (not just the callback) so the next keystroke targets it 815ms
+   ✓ FlowMindMap canvas > Escape on a brand-new empty topic discards it instead of leaving a blank node 667ms
+   ✓ FlowMindMap canvas > Escape on a new topic you typed into keeps it (only an empty one is discarded) 598ms
+   ✓ FlowMindMap canvas > Enter then Escape keeps the committed text and drops only the empty new sibling (no data loss) 780ms
+   ✓ FlowMindMap canvas > drops a URL onto the canvas as a floating topic 372ms
+   ✓ FlowMindMap canvas > renders overlays for a doc with boundaries / summaries / callouts / backdrop in brace layout 519ms
+   ✓ FlowMindMap canvas > mounts through the lazy MindMap entry seam (index.tsx) 484ms
+   ✓ FlowMindMap canvas > opens the right-click context menu and runs its actions 2132ms
+   ✓ FlowMindMap canvas > context menu exposes Add note + inline marker/priority quick-setters (#3) 490ms
+   ✓ FlowMindMap canvas > selects on node click, shows the quick-action popover, and deselects on pane click 419ms
+   ✓ FlowMindMap canvas > right-clicks a boundary overlay → recolour / shape / outline / delete menu (Phase 4) 699ms
+   ✓ FlowMindMap canvas > reveals the on-node ＋ add affordances on hover (#1) and wires them to add child/sibling 332ms
+   ✓ FlowMindMap canvas > the action bar carries touch-only Add child / Add sibling (no sibling on the root) 390ms
+   ✓ FlowMindMap canvas > the on-selection action bar wires note + priority quick-actions (UI-3) 440ms
+   ✓ FlowMindMap canvas > shows the empty-map coachmark until the first edit, never on a populated map (#1) 316ms
+   ✓ FlowMindMap canvas > draws a relationship via the Link to… gesture — silently, then inline-labels it 420ms
+   ✓ FlowMindMap canvas > commits inline edits and runs the node affordances (link / progress / collapse) 575ms
+   ✓ FlowMindMap canvas > toggles the minimap, follows in-map / map links, and edits a relationship edge 609ms
+   ✓ FlowMindMap canvas > status-bar view switcher reports the picked view; hidden without activeView/onSetView 362ms
+   ✓ FlowMindMap canvas > re-syncs on live direction / numbering / filter prop changes 310ms
+   ✓ FlowMindMap canvas > selects + edits overlays (boundary/summary/callout) with 4-way mutual exclusivity 508ms
+   ✓ FlowMindMap canvas > edge right-click opens a relationship menu (label / arrows / line / type / delete) 524ms
+
+ Test Files  223 passed (223)
+      Tests  2571 passed | 3 skipped (2574)
+   Start at  12:28:30
+   Duration  49.68s (transform 15.93s, setup 39.42s, collect 43.90s, tests 161.83s, environment 170.56s, prepare 45.89s)
+
+ % Coverage report from v8
+
+=============================== Coverage summary ===============================
+Statements   : 90.59% ( 32912/36327 )
+Branches     : 87.23% ( 9542/10938 )
+Functions    : 78.79% ( 1984/2518 )
+Lines        : 90.59% ( 32912/36327 )
+================================================================================
+vite v8.0.16 building client environment for production...
+
+transforming...✓ 640 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                          0.61 kB
+dist/index.html                                    2.07 kB │ gzip:   0.92 kB
+dist/user-guide.html                             102.45 kB │ gzip:  35.42 kB
+dist/assets/StartScreen-YGQmuelq.css              12.01 kB │ gzip:   2.63 kB
+dist/assets/FlowMindMap-DtxX27Jz.css              15.41 kB │ gzip:   2.56 kB
+dist/assets/index-CkPHHrZ0.css                    29.09 kB │ gzip:   5.75 kB
+dist/assets/xml-BjLw63eA.js                        0.20 kB │ gzip:   0.14 kB
+dist/assets/zip-B9nI9IfU.js                        0.21 kB │ gzip:   0.18 kB
+dist/assets/ooxml-BtSBQPEM.js                      0.22 kB │ gzip:   0.20 kB
+dist/assets/textbundle-B22qr1-7.js                 0.35 kB │ gzip:   0.27 kB
+dist/assets/markmap-BNXPUf68.js                    0.48 kB │ gzip:   0.34 kB
+dist/assets/chunk-QTnfLwEv.js                      0.69 kB │ gzip:   0.42 kB
+dist/assets/mindmup-Cc1zZeIU.js                    0.91 kB │ gzip:   0.55 kB
+dist/assets/registry-Bu0y0I6o.js                   1.04 kB │ gzip:   0.57 kB
+dist/assets/mindmeister-BMiRTp29.js                1.25 kB │ gzip:   0.64 kB
+dist/assets/opml-Bxi6QWDY.js                       1.27 kB │ gzip:   0.76 kB
+dist/assets/BranchExportDialog-C_3FDPUZ.js         1.48 kB │ gzip:   0.74 kB
+dist/assets/ithoughts-CimmFZC2.js                  1.53 kB │ gzip:   0.87 kB
+dist/assets/freemind-Bob3s0x_.js                   1.80 kB │ gzip:   1.01 kB
+dist/assets/smmx-DKOBlRFq.js                       3.40 kB │ gzip:   1.63 kB
+dist/assets/docx-DSWoCeq7.js                       4.05 kB │ gzip:   1.82 kB
+dist/assets/messages-RwKLm1fq.js                   4.33 kB │ gzip:   1.45 kB
+dist/assets/xlsx-DesrLBCt.js                       5.31 kB │ gzip:   2.19 kB
+dist/assets/workbox-window.prod.es5-Bd17z0YL.js    5.65 kB │ gzip:   2.20 kB
+dist/assets/deck-C46ZGdlp.js                       5.68 kB │ gzip:   2.30 kB
+dist/assets/ThemeDesignerDialog-BYtj68Dc.js        5.95 kB │ gzip:   2.04 kB
+dist/assets/mmap-CCq4aeii.js                       6.60 kB │ gzip:   2.81 kB
+dist/assets/xmind-BYOhVLPb.js                      7.77 kB │ gzip:   2.98 kB
+dist/assets/jsx-runtime-BWRPWl8p.js                7.88 kB │ gzip:   2.98 kB
+dist/assets/Presentation-RvKtWXkA.js               9.33 kB │ gzip:   3.28 kB
+dist/assets/mmap-KpTRIQyF.js                       9.81 kB │ gzip:   4.07 kB
+dist/assets/pptx-BVabjf68.js                      10.19 kB │ gzip:   3.01 kB
+dist/assets/interactiveHtml-BL_a71Xc.js           11.14 kB │ gzip:   4.14 kB
+dist/assets/browser-HoyBtp8T.js                   12.39 kB │ gzip:   6.11 kB
+dist/assets/primitives-X3H-CP4k.js                13.81 kB │ gzip:   4.62 kB
+dist/assets/exampleBuilders-DNX6pFd4.js           15.67 kB │ gzip:   6.88 kB
+dist/assets/fxp-aKF0i0a2.js                       34.74 kB │ gzip:  10.72 kB
+dist/assets/i18n-CcBv99sT.js                      50.85 kB │ gzip:  16.42 kB
+dist/assets/StartScreen-UqnZKldv.js               52.40 kB │ gzip:  14.52 kB
+dist/assets/FlowMindMap-m_aSITa4.js              334.67 kB │ gzip: 107.02 kB
+dist/assets/pdf-BZMyNEoc.js                      420.53 kB │ gzip: 175.83 kB
+dist/assets/index-CFiA0d8b.js                    559.55 kB │ gzip: 163.60 kB
+
+[INEFFECTIVE_DYNAMIC_IMPORT] src/io/mermaid.ts is dynamically imported by src/io/importDispatch.ts but also st
+atically imported by src/useMapExports.ts, dynamic import will not move module into another chunk.
+
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeS
+plitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 507ms
+
+PWA v1.3.0
+mode      generateSW
+precache  47 entries (1775.40 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-2fbc6a65.js
+  BranchExportDialog-C_3FDPUZ.js  0.7 kB gz  (lazy)
+  browser-HoyBtp8T.js  5.9 kB gz  (lazy)
+  chunk-QTnfLwEv.js  0.4 kB gz  (preloaded — first paint)
+  deck-C46ZGdlp.js  2.2 kB gz  (lazy)
+  docx-DSWoCeq7.js  1.8 kB gz  (lazy)
+  exampleBuilders-DNX6pFd4.js  6.7 kB gz  (lazy)
+  FlowMindMap-m_aSITa4.js  103.6 kB gz  (lazy)
+  freemind-Bob3s0x_.js  1.0 kB gz  (lazy)
+  fxp-aKF0i0a2.js  10.4 kB gz  (lazy)
+  i18n-CcBv99sT.js  15.9 kB gz  (preloaded — first paint)
+  index-CFiA0d8b.js  158.5 kB gz  (entry)
+  interactiveHtml-BL_a71Xc.js  4.0 kB gz  (lazy)
+  ithoughts-CimmFZC2.js  0.9 kB gz  (lazy)
+  jsx-runtime-BWRPWl8p.js  2.9 kB gz  (preloaded — first paint)
+  markmap-BNXPUf68.js  0.3 kB gz  (lazy)
+  messages-RwKLm1fq.js  1.4 kB gz  (lazy)
+  mindmeister-BMiRTp29.js  0.6 kB gz  (lazy)
+  mindmup-Cc1zZeIU.js  0.5 kB gz  (lazy)
+  mmap-CCq4aeii.js  2.7 kB gz  (lazy)
+  mmap-KpTRIQyF.js  4.0 kB gz  (lazy)
+  ooxml-BtSBQPEM.js  0.2 kB gz  (lazy)
+  opml-Bxi6QWDY.js  0.7 kB gz  (lazy)
+  pdf-BZMyNEoc.js  171.2 kB gz  (lazy)
+  pptx-BVabjf68.js  2.9 kB gz  (lazy)
+  Presentation-RvKtWXkA.js  3.2 kB gz  (lazy)
+  primitives-X3H-CP4k.js  4.5 kB gz  (preloaded — first paint)
+  registry-Bu0y0I6o.js  0.6 kB gz  (preloaded — first paint)
+  smmx-DKOBlRFq.js  1.6 kB gz  (lazy)
+  StartScreen-UqnZKldv.js  14.1 kB gz  (lazy)
+  textbundle-B22qr1-7.js  0.3 kB gz  (lazy)
+  ThemeDesignerDialog-BYtj68Dc.js  2.0 kB gz  (lazy)
+  workbox-window.prod.es5-Bd17z0YL.js  2.1 kB gz  (lazy)
+  xlsx-DesrLBCt.js  2.1 kB gz  (lazy)
+  xmind-BYOhVLPb.js  2.9 kB gz  (lazy)
+  xml-BjLw63eA.js  0.1 kB gz  (lazy)
+  zip-B9nI9IfU.js  0.2 kB gz  (lazy)
+  ───
+  first load  182.8 kB gz  (budget 184 kB)    lazy  374.9 kB gz
+  of that first load, 158.5 kB is the entry chunk and 24.3 kB is preloaded siblings.
+
+✓ First-load JS within budget: 182.8 kB ≤ 184 kB
+✓ React Flow core CSS bundled (.react-flow rules present)

@@ -2,6 +2,11 @@
 
 ## Mindloom — 2026-10-26
 
+Phase 1 Batch 3 adds provenance/publication policy validation, private-only local
+intake and a sanitized structural-evidence candidate workflow. The user confirms
+no genuine sample source is currently available; Batch 3 / Phase 1 remain blocked
+on real-corpus acquisition. No preservation or writer behavior changes are included.
+
 Phase 1 Batch 2 adds development infrastructure for a deterministic synthetic MMAP
 inspection corpus: 14 provenance-labelled manifest slots, 13 generated packages,
 and a summary slot pending format evidence. The builder, structural expectations,

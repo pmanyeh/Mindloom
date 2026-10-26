@@ -1,6 +1,6 @@
 # Mindloom working rules
 
-Read `MINDLOOM_MASTER_PLAN.md` and the phase reports before changing scope. The user has accepted Batch 1 head `802d2b4190f267bd1dc07956c635a202962ea2fb` and authorized its integration into `main`, followed by Phase 1 Batch 2 (P1C synthetic corpus) only. Stop after `phase1-batch2-report.md`; do not begin Batch 3 / P1D real corpus, MindManager Oracle work or Phase 2 preservation. Historical Phase 0 documents retain the former Maploom name.
+Read `MINDLOOM_MASTER_PLAN.md` and the phase reports before changing scope. The user has accepted Batch 2 head `661c271e40ab4dc7d22391abea7d9db7f48b89cb`, authorized its integration into `main`, and authorized Phase 1 Batch 3 (P1D real corpus/intake and Phase 1 final evidence) only. The user confirms no real sources are currently available: complete the intake workflow and report BLOCKED ON REAL-CORPUS ACQUISITION. Stop with `phase1-batch3-report.md` and `phase1-report.md`; do not begin Phase 2, preservation, writer fixes or a general Oracle harness. Historical Phase 0 documents retain the former Maploom name.
 
 ## Remote policy (explicit user instruction)
 

@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mindloom real corpus provenance registry",
+  "description": "Policy schema only; human permission/privacy evidence is still required. Runtime validation adds cross-record and sensitive-marker checks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "corpus",
+    "acquisitionStatus",
+    "defaultPrivacy",
+    "samples",
+    "targets",
+    "limitations"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "corpus": {
+      "const": "mindloom-phase1-real"
+    },
+    "acquisitionStatus": {
+      "enum": ["BLOCKED ON REAL-CORPUS ACQUISITION", "evidence-available"]
+    },
+    "defaultPrivacy": {
+      "const": "private-until-reviewed"
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sample"
+      }
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "status", "sampleIds"],
+        "properties": {
+          "id": {
+            "enum": [
+              "modern-minimal",
+              "modern-feature-mixed",
+              "deep-map",
+              "wide-map",
+              "large-map",
+              "multiple-images",
+              "attachment",
+              "legacy"
+            ]
+          },
+          "status": {
+            "enum": ["acquired", "local-only", "pending", "unavailable"]
+          },
+          "sampleIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^REAL-[0-9]{3}$"
+            }
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "sample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "provenanceClass",
+        "producer",
+        "producerVersion",
+        "platform",
+        "generation",
+        "sourceDescription",
+        "acquisitionMethod",
+        "licenseOrPermission",
+        "publicCommitAllowed",
+        "rawCommitted",
+        "sanitized",
+        "fingerprintPublicationAllowed",
+        "contentSynthetic",
+        "inspectionStatus",
+        "fixtureFile",
+        "evidenceFile",
+        "sha256",
+        "normalizedInspectionFingerprint",
+        "sanitizedStructuralFingerprint",
+        "featureIntent",
+        "limitations",
+        "publicationReview"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^REAL-[0-9]{3}$"
+        },
+        "provenanceClass": {
+          "enum": [
+            "mindmanager-generated-synthetic-content",
+            "sanitized-real-world",
+            "public-authorized-sample",
+            "private-local-only"
+          ]
+        },
+        "producer": {
+          "type": ["string", "null"]
+        },
+        "producerVersion": {
+          "type": ["string", "null"]
+        },
+        "platform": {
+          "type": ["string", "null"]
+        },
+        "generation": {
+          "type": ["string", "null"]
+        },
+        "sourceDescription": {
+          "type": "string",
+          "minLength": 1
+        },
+        "acquisitionMethod": {
+          "type": "string",
+          "minLength": 1
+        },
+        "licenseOrPermission": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicCommitAllowed": {
+          "type": "boolean"
+        },
+        "rawCommitted": {
+          "type": "boolean"
+        },
+        "sanitized": {
+          "type": "boolean"
+        },
+        "fingerprintPublicationAllowed": {
+          "type": "boolean"
+        },
+        "contentSynthetic": {
+          "type": ["boolean", "null"]
+        },
+        "inspectionStatus": {
+          "enum": ["pending", "inspected", "rejected", "limit-conflict"]
+        },
+        "fixtureFile": {
+          "type": ["string", "null"],
+          "pattern": "^packages/REAL-[0-9]{3}\\.mmap$"
+        },
+        "evidenceFile": {
+          "type": ["string", "null"],
+          "pattern": "^evidence/REAL-[0-9]{3}\\.json$"
+        },
+        "sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "normalizedInspectionFingerprint": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "sanitizedStructuralFingerprint": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "featureIntent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "publicationReview": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "permissionVerified",
+            "privacyReviewed",
+            "sensitiveMetadataFound",
+            "evidence"
+          ],
+          "properties": {
+            "permissionVerified": {
+              "type": "boolean"
+            },
+            "privacyReviewed": {
+              "type": "boolean"
+            },
+            "sensitiveMetadataFound": {
+              "type": "boolean"
+            },
+            "evidence": {
+              "type": ["string", "null"],
+              "pattern": "^reviews/REAL-[0-9]{3}\\.md$"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "provenanceClass": {
+                "const": "private-local-only"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "rawCommitted": {
+                "const": false
+              },
+              "publicCommitAllowed": {
+                "const": false
+              },
+              "fingerprintPublicationAllowed": {
+                "const": false
+              },
+              "fixtureFile": {
+                "type": "null"
+              },
+              "sha256": {
+                "type": "null"
+              },
+              "normalizedInspectionFingerprint": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "rawCommitted": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "publicCommitAllowed": {
+                "const": true
+              },
+              "fixtureFile": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "publicationReview": {
+                "properties": {
+                  "permissionVerified": {
+                    "const": true
+                  },
+                  "privacyReviewed": {
+                    "const": true
+                  },
+                  "sensitiveMetadataFound": {
+                    "const": false
+                  },
+                  "evidence": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "provenanceClass": {
+                "const": "mindmanager-generated-synthetic-content"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "contentSynthetic": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "provenanceClass": {
+                "const": "sanitized-real-world"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "sanitized": {
+                "const": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

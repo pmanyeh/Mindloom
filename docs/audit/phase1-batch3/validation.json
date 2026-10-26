@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Asia/Taipei",
+  "repository": "https://github.com/pmanyeh/Mindloom",
+  "branch": "feature/p1-batch3-real-corpus",
+  "acceptedBaseCommit": "661c271e40ab4dc7d22391abea7d9db7f48b89cb",
+  "acceptedBatch1Commit": "802d2b4190f267bd1dc07956c635a202962ea2fb",
+  "mainIntegration": "fast-forward; no rewritten shared history",
+  "baselineCiUrl": "https://github.com/pmanyeh/Mindloom/actions/runs/40266849726",
+  "baselineCiConclusion": "success",
+  "platform": "Windows x64",
+  "node": "24.22.1",
+  "pnpm": "11.0.9",
+  "phase1Result": "BLOCKED ON REAL-CORPUS ACQUISITION",
+  "userConfirmedNoSource": true,
+  "realEvidence": {
+    "samples": 0,
+    "inspections": 0,
+    "pendingTargets": 8,
+    "comparisonRowsWithoutRealSample": 14,
+    "observedVersions": [],
+    "summary": "pending-format-evidence",
+    "noOpBaseline": "NOT_OBSERVED_ON_REAL_INPUT"
+  },
+  "focused": {
+    "filesPassed": 5,
+    "testsPassed": 142,
+    "testsSkipped": 2
+  },
+  "newIntakeTests": {
+    "passed": 21,
+    "failed": 0,
+    "inputClass": "manufactured workflow/security probes; not real corpus"
+  },
+  "gate": {
+    "command": "pnpm gate",
+    "result": "PASS",
+    "filesPassed": 223,
+    "testsPassed": 2571,
+    "testsSkipped": 3,
+    "statements": 90.59,
+    "lines": 90.59,
+    "branches": 87.23,
+    "functions": 78.79,
+    "firstLoadGzipKiB": 182.8,
+    "sizeBudgetKiB": 184,
+    "rawLogSha256": "830d3efff95da445aa815aeadc8a66201b5bf6d5e8d35aacdf330d836b38304f",
+    "warnings": [
+      "Existing large-chunk build warning retained.",
+      "PowerShell NativeCommandError wrapper reflects native stderr redirection; all fail-fast gate stages completed."
+    ]
+  },
+  "protectedFiles": "Existing reader/writer, canonical model, inspector/normalizer/vocabulary, synthetic corpus, Phase 0 witnesses, existing Phase 1 tests and lockfile unchanged.",
+  "phaseBoundary": "P1D intake and Phase 1 evidence only. No Phase 2, preservation, writer fixes or general Oracle harness."
+}

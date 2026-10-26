@@ -14,6 +14,12 @@ Phase 1 Batch 2 adds a reproducible synthetic inspection corpus:
 and [the Batch 2 report](phase1-batch2-report.md). There are 14 manifest slots;
 13 produce packages, while summary remains pending format evidence.
 
+Phase 1 Batch 3 provides [private/public intake rules](docs/format/MMAP_REAL_CORPUS.md),
+`pnpm mmap-real:status` and opt-in local inspection. The user currently has no real
+sample source: Batch 3 and [Phase 1](phase1-report.md) remain **BLOCKED ON REAL-CORPUS
+ACQUISITION**. See [the Batch 3 report](phase1-batch3-report.md); passing tooling tests
+does not complete real-corpus acquisition.
+
 The audited upstream commit is `65964ac06937514cf9805a2b1198cc20f1e83425`.
 The current MMAP adapter is lossy; high-fidelity compatibility and MindManager acceptance
 have not been established. Software and book content have separate licenses, as documented

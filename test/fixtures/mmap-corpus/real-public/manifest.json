@@ -1,0 +1,23 @@
+{
+  "$schema": "./manifest.schema.json",
+  "schemaVersion": 1,
+  "corpus": "mindloom-phase1-real",
+  "acquisitionStatus": "BLOCKED ON REAL-CORPUS ACQUISITION",
+  "defaultPrivacy": "private-until-reviewed",
+  "samples": [],
+  "targets": [
+    { "id": "modern-minimal", "status": "pending", "sampleIds": [] },
+    { "id": "modern-feature-mixed", "status": "pending", "sampleIds": [] },
+    { "id": "deep-map", "status": "pending", "sampleIds": [] },
+    { "id": "wide-map", "status": "pending", "sampleIds": [] },
+    { "id": "large-map", "status": "pending", "sampleIds": [] },
+    { "id": "multiple-images", "status": "pending", "sampleIds": [] },
+    { "id": "attachment", "status": "pending", "sampleIds": [] },
+    { "id": "legacy", "status": "pending", "sampleIds": [] }
+  ],
+  "limitations": [
+    "The user confirms no genuine sample source is currently available.",
+    "No real package, producer version, summary encoding or no-op baseline has been observed.",
+    "Synthetic test data used to validate intake is not real-corpus acquisition."
+  ]
+}

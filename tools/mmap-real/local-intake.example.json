@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "REAL-001",
+  "inputPath": null,
+  "provenanceClass": "private-local-only",
+  "producer": null,
+  "producerVersion": null,
+  "platform": null,
+  "contentSynthetic": null,
+  "sanitized": false,
+  "localInspectionAllowed": false,
+  "permissionEvidence": null,
+  "captureCurrentImport": false
+}
