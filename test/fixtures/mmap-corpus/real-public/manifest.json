@@ -2,22 +2,90 @@
   "$schema": "./manifest.schema.json",
   "schemaVersion": 1,
   "corpus": "mindloom-phase1-real",
-  "acquisitionStatus": "BLOCKED ON REAL-CORPUS ACQUISITION",
+  "acquisitionStatus": "evidence-available",
   "defaultPrivacy": "private-until-reviewed",
-  "samples": [],
+  "samples": [
+    {
+      "id": "REAL-001",
+      "provenanceClass": "private-local-only",
+      "producer": "MindManager",
+      "producerVersion": "20.1.231",
+      "platform": "Windows",
+      "generation": null,
+      "sourceDescription": "MM-01-minimal: user-supplied genuine local candidate; producer/version/platform observed in document metadata, not Oracle verified.",
+      "acquisitionMethod": "Read-only private local inspection; original and private evidence excluded from Git.",
+      "licenseOrPermission": "User authorized local inspection and sanitized structural evidence on 2026-10-27; raw publication rights not established.",
+      "publicCommitAllowed": false,
+      "rawCommitted": false,
+      "sanitized": false,
+      "contentSynthetic": null,
+      "inspectionStatus": "inspected",
+      "fixtureFile": null,
+      "evidenceFile": "evidence/REAL-001.json",
+      "sha256": null,
+      "normalizedInspectionFingerprint": null,
+      "sanitizedStructuralFingerprint": null,
+      "fingerprintPublicationAllowed": false,
+      "featureIntent": ["root-only", "three-level-tree", "styles-layout", "unknown-extensions"],
+      "limitations": [
+        "Original contains private identity and local document-path metadata; do not publish raw package.",
+        "Only reduced structural evidence reviewed for publication; original is not sanitized.",
+        "Producer fields are document observations, not an independent Oracle run.",
+        "Summary representation absent; broad corpus coverage and writer no-op baseline remain pending."
+      ],
+      "publicationReview": {
+        "permissionVerified": false,
+        "privacyReviewed": true,
+        "sensitiveMetadataFound": false,
+        "evidence": "reviews/REAL-001.md"
+      }
+    }
+  ],
   "targets": [
-    { "id": "modern-minimal", "status": "pending", "sampleIds": [] },
-    { "id": "modern-feature-mixed", "status": "pending", "sampleIds": [] },
-    { "id": "deep-map", "status": "pending", "sampleIds": [] },
-    { "id": "wide-map", "status": "pending", "sampleIds": [] },
-    { "id": "large-map", "status": "pending", "sampleIds": [] },
-    { "id": "multiple-images", "status": "pending", "sampleIds": [] },
-    { "id": "attachment", "status": "pending", "sampleIds": [] },
-    { "id": "legacy", "status": "pending", "sampleIds": [] }
+    {
+      "id": "modern-minimal",
+      "status": "local-only",
+      "sampleIds": ["REAL-001"]
+    },
+    {
+      "id": "modern-feature-mixed",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "deep-map",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "wide-map",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "large-map",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "multiple-images",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "attachment",
+      "status": "pending",
+      "sampleIds": []
+    },
+    {
+      "id": "legacy",
+      "status": "pending",
+      "sampleIds": []
+    }
   ],
   "limitations": [
-    "The user confirms no genuine sample source is currently available.",
-    "No real package, producer version, summary encoding or no-op baseline has been observed.",
-    "Synthetic test data used to validate intake is not real-corpus acquisition."
+    "One genuine private local sample inspected; seven other target classes remain pending.",
+    "Raw publication permission not established; all raw and normalized fingerprints remain private.",
+    "Summary remains pending-format-evidence; no Oracle or real writer round-trip observed."
   ]
 }

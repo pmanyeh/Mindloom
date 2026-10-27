@@ -1,0 +1,23 @@
+
+ RUN  v2.1.9 <workspace>
+
+ ✓ test/app-integration.test.tsx (14 tests) 32548ms
+   ✓ App (integration) > boots to the Start screen and opens a map into the editor 568ms
+   ✓ App (integration) > opens + closes the ⌘K command palette 441ms
+   ✓ App (integration) > toggles a side panel into the tabbed dock via the Panels menu 3621ms
+   ✓ App (integration) > runs find then replace-all from the overlay without crashing 3811ms
+   ✓ App (integration) > undo / redo from the header toolbar 2067ms
+   ✓ App (integration) > drives the View, Canvas and Export menus without crashing 3347ms
+   ✓ App (integration) > opens the More menu and starts + exits Present mode 1963ms
+   ✓ App (integration) > imports a file, surfaces the lossy-import note, and dismisses the banner 2641ms
+   ✓ App (integration) > opens Settings with the Ctrl/⌘+, shortcut 861ms
+   ✓ App (integration) > opens Settings from the rail and drives its actions 2772ms
+   ✓ App (integration) > selects a topic and drives inspector edits (tag, progress, priority) 3937ms
+   ✓ App (integration) > records back/forward navigation and copies a deep-link to the selected topic 3276ms
+   ✓ App (integration) > flushes a pending debounced autosave the instant the tab is hidden 1897ms
+   ✓ App (integration) > returns to the Start screen via Home and back into a map 1342ms
+
+ Test Files  1 passed (1)
+      Tests  14 passed (14)
+   Start at  10:34:04
+   Duration  39.21s (transform 4.09s, setup 521ms, collect 3.73s, tests 32.55s, environment 1.54s, prepare 172ms)

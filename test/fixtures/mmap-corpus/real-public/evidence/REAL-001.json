@@ -1,0 +1,3080 @@
+{
+  "schemaVersion": 1,
+  "id": "REAL-001",
+  "sampleLabel": "MM-01-minimal",
+  "provenanceClass": "private-local-only",
+  "publicationStatus": "sanitized-structure-reviewed",
+  "rawCommitted": false,
+  "oracleVerified": false,
+  "roundTripSafe": false,
+  "producerMetadata": {
+    "source": "Document.xml xml-client processing instruction",
+    "applicationField": "name",
+    "application": "MindManager",
+    "version": "20.1.231",
+    "platform": "Windows",
+    "verification": "observed-document-metadata; not independently observed MindManager execution"
+  },
+  "privacy": {
+    "reviewedOn": "2026-10-27",
+    "rawPublicationAllowed": false,
+    "rawSensitiveMetadataFound": true,
+    "publishedEvidenceSensitiveMetadataFound": false,
+    "omitted": [
+      "original filename and source path",
+      "all text and attribute values except reviewed producer metadata",
+      "user and machine identities",
+      "local and UNC paths",
+      "raw XML, preview and schema payloads",
+      "CRC, sizes, raw and normalized fingerprints",
+      "non-allowlisted namespace URIs and extension names"
+    ]
+  },
+  "packageEntries": [
+    {
+      "path": "Document.xml",
+      "category": "document",
+      "kind": "file"
+    },
+    {
+      "path": "Preview.png",
+      "category": "preview",
+      "kind": "file"
+    },
+    {
+      "path": "bin/",
+      "category": "bin",
+      "kind": "directory"
+    },
+    {
+      "path": "xsd/",
+      "category": "xsd",
+      "kind": "directory"
+    },
+    {
+      "path": "xsd/MindManagerApplication.xsd",
+      "category": "xsd",
+      "kind": "file"
+    },
+    {
+      "path": "xsd/MindManagerCore.xsd",
+      "category": "xsd",
+      "kind": "file"
+    },
+    {
+      "path": "xsd/MindManagerDelta.xsd",
+      "category": "xsd",
+      "kind": "file"
+    },
+    {
+      "path": "xsd/MindManagerPrimitive.xsd",
+      "category": "xsd",
+      "kind": "file"
+    }
+  ],
+  "shape": {
+    "inspectionCompleted": true,
+    "issueCodes": [],
+    "package": {
+      "entryCount": 8,
+      "entryClasses": [
+        {
+          "name": "bin",
+          "count": 1
+        },
+        {
+          "name": "document",
+          "count": 1
+        },
+        {
+          "name": "preview",
+          "count": 1
+        },
+        {
+          "name": "xsd",
+          "count": 5
+        }
+      ],
+      "documentLocation": "root",
+      "previewPresent": true,
+      "binEntries": 1,
+      "xsdEntries": 5,
+      "unrecognizedEntries": 0,
+      "compressionMethods": [0, 8]
+    },
+    "xml": {
+      "root": "{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+      "namespaces": [
+        {
+          "name": "[unrecognized]",
+          "count": 2
+        },
+        {
+          "name": "http://schemas.mindjet.com/MindManager/Application/2003",
+          "count": 1
+        },
+        {
+          "name": "http://schemas.mindjet.com/MindManager/Core/2003",
+          "count": 1
+        },
+        {
+          "name": "http://schemas.mindjet.com/MindManager/Primitive/2003",
+          "count": 1
+        },
+        {
+          "name": "http://www.w3.org/2001/XMLSchema-instance",
+          "count": 1
+        }
+      ],
+      "elements": [
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}BackgroundFill",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}Collapsed",
+          "count": 2
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}Font",
+          "count": 3
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}Map",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}Offset",
+          "count": 2
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}RootTopicDefaultsGroup",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics",
+          "count": 1
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}Text",
+          "count": 2
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}Topic",
+          "count": 3
+        },
+        {
+          "name": "known:{http://schemas.mindjet.com/MindManager/Application/2003}TopicViewGroup",
+          "count": 3
+        },
+        {
+          "name": "unrecognized:[unrecognized]",
+          "count": 282
+        },
+        {
+          "name": "unrecognized:{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor",
+          "count": 12
+        },
+        {
+          "name": "unrecognized:{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText",
+          "count": 10
+        },
+        {
+          "name": "unrecognized:{http://schemas.mindjet.com/MindManager/Application/2003}Font",
+          "count": 11
+        }
+      ],
+      "attributes": [
+        {
+          "name": "[unrecognized]@[unrecognized]",
+          "count": 989
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}BackgroundFill@[unrecognized]",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}BackgroundFill@{}FillColor",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Collapsed@[unrecognized]",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Collapsed@{}Collapsed",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor@[unrecognized]",
+          "count": 32
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor@{}Dirty",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor@{}FillColor",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor@{}LineColor",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText@[unrecognized]",
+          "count": 56
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText@{}Dirty",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText@{}TextAlignment",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText@{}VerticalTextAlignment",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Font@[unrecognized]",
+          "count": 79
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Font@{}Bold",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Font@{}Color",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Font@{}Name",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Font@{}Size",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Font@{}Underline",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Map@{http://www.w3.org/2001/XMLSchema-instance}schemaLocation",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Map@{}Dirty",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Map@{}Gen",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Map@{}OId",
+          "count": 1
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Offset@[unrecognized]",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Offset@{}CX",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Offset@{}CY",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Text@[unrecognized]",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Text@{}PlainText",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Text@{}ReadOnly",
+          "count": 2
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Topic@{}Dirty",
+          "count": 3
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Topic@{}Gen",
+          "count": 3
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}Topic@{}OId",
+          "count": 3
+        },
+        {
+          "name": "{http://schemas.mindjet.com/MindManager/Application/2003}TopicViewGroup@[unrecognized]",
+          "count": 3
+        }
+      ],
+      "paths": [
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\"]",
+          "count": 31
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\"]",
+          "count": 45
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\"]",
+          "count": 57
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"[unrecognized]\",\"[unrecognized]\",\"[unrecognized]\"]",
+          "count": 36
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"[unrecognized]\",\"[unrecognized]\"]",
+          "count": 27
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"[unrecognized]\"]",
+          "count": 5
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"[unrecognized]\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Offset\"]",
+          "count": 2
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Text\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Font\"]",
+          "count": 2
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Text\"]",
+          "count": 2
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}TopicViewGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Collapsed\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}TopicViewGroup\"]",
+          "count": 2
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\"]",
+          "count": 2
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}SubTopics\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}TopicViewGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Collapsed\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}TopicViewGroup\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Topic\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}OneTopic\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"[unrecognized]\",\"[unrecognized]\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Font\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"[unrecognized]\",\"[unrecognized]\"]",
+          "count": 58
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"[unrecognized]\",\"{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor\"]",
+          "count": 12
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"[unrecognized]\",\"{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Font\"]",
+          "count": 10
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"[unrecognized]\",\"{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText\"]",
+          "count": 10
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"[unrecognized]\"]",
+          "count": 15
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}BackgroundFill\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}RootTopicDefaultsGroup\",\"[unrecognized]\"]",
+          "count": 7
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}RootTopicDefaultsGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}DefaultColor\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}RootTopicDefaultsGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText\",\"{http://schemas.mindjet.com/MindManager/Application/2003}Font\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}RootTopicDefaultsGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}DefaultText\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\",\"{http://schemas.mindjet.com/MindManager/Application/2003}RootTopicDefaultsGroup\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\",\"{http://schemas.mindjet.com/MindManager/Application/2003}StyleGroup\"]",
+          "count": 1
+        },
+        {
+          "name": "[\"{http://schemas.mindjet.com/MindManager/Application/2003}Map\"]",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "inventoryTotals": {
+    "elementGroups": 111,
+    "elementOccurrences": 338,
+    "knownElementOccurrences": 23,
+    "unrecognizedElementOccurrences": 315,
+    "attributeGroups": 326,
+    "attributeOccurrences": 1201,
+    "knownAttributeOccurrences": 35,
+    "unrecognizedAttributeOccurrences": 1166,
+    "structuralPathGroups": 192
+  },
+  "reviewedInventory": {
+    "policy": "Canonical prefixes for the four reviewed public vendor/W3C namespaces; all vendor structural names and unqualified attribute names reviewed as format vocabulary, values omitted. Other names/URIs remain redacted. Recognition labels are unchanged.",
+    "elements": [
+      {
+        "name": "ap:AppliedStyleName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Author",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:BackgroundFill",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:BackgroundObjectDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:BoundaryDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:CalloutSubTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:CalloutTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Collapsed",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "name": "ap:Color",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:ComparisonCriteria",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "name": "ap:ComparisonValue",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:ConditionalFormattingRulesGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Creator",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:CreatorCompany",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DateTimeStamps",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultBackgroundObjectType",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultBoundaryShape",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultCalloutFloatingTopicShape",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "name": "ap:DefaultCircleSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultColor",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultColor",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "name": "ap:DefaultConnectionStyle",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "name": "ap:DefaultFillet",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultHorizontalDividerSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultHorizontalSwimlaneCount",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultHorizontalSwimlanesSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultImageThumbnailSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultLabelFloatingTopicShape",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:DefaultLineStyle",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:DefaultRectangleSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultRelationshipLineShape",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultSubTopicShape",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "name": "ap:DefaultSubTopicsShape",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "name": "ap:DefaultSubTopicsVisibility",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "name": "ap:DefaultText",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultText",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "name": "ap:DefaultTextSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultTitleText",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultTopicLayout",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "name": "ap:DefaultVerticalDividerSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultVerticalSwimlaneCount",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DefaultVerticalSwimlanesSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Description",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DocumentGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:DocumentPath",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:EffectGroup",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "name": "ap:EffectType",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "name": "ap:EffectsGroup",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:FillColorMarkersName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Font",
+        "recognition": "known",
+        "count": 3
+      },
+      {
+        "name": "ap:Font",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "name": "ap:GroupName",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:IconMarker",
+        "recognition": "unrecognized",
+        "count": 24
+      },
+      {
+        "name": "ap:IconMarkers",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "name": "ap:IconMarkersSet",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:IconMarkersSets",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Id",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "name": "ap:LabelSubTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:LabelTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Language",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:LastModificator",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:LayoutOptions",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Map",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:MapViewGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:MarkersSetGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:MatchOption",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:Name",
+        "recognition": "unrecognized",
+        "count": 39
+      },
+      {
+        "name": "ap:NamedRuleGroup",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:NotesDefaultFont",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:ObjectReference",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Offset",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "name": "ap:OneStockIcon",
+        "recognition": "unrecognized",
+        "count": 22
+      },
+      {
+        "name": "ap:OneTopic",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:OrgChartSubTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:OrgChartTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:PreviewImageData",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:RelationshipDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:RootSubTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "name": "ap:RootTopicDefaultsGroup",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:Selection",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Statistics",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Structure",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:StyleGroup",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:SubTopics",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "name": "ap:Task",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "name": "ap:TaskPercentage",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "name": "ap:TaskPercentageMarker",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "name": "ap:TaskPercentageMarkers",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TaskPercentageMarkersName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TaskPriority",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "name": "ap:TaskPriorityMarker",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "name": "ap:TaskPriorityMarkers",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TaskPriorityMarkersName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Text",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "name": "ap:TextColorMarkersName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TextLabelMarker",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:TextLabelMarkers",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TextLabelMarkersSet",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TextLabelMarkersSetOptions",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TextLabelMarkersSets",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:TimelineSubTopicDefaultsGroup",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:Topic",
+        "recognition": "known",
+        "count": 3
+      },
+      {
+        "name": "ap:TopicViewGroup",
+        "recognition": "known",
+        "count": 3
+      },
+      {
+        "name": "ap:TriggerGroup",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "name": "ap:TriggerType",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "name": "ap:TriggersGroup",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "name": "ap:Version",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:ViewContext",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "ap:ZoomFactor",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "name": "cor:Custom",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "name": "cor:Uri",
+        "recognition": "unrecognized",
+        "count": 1
+      }
+    ],
+    "attributes": [
+      {
+        "owner": "ap:TextLabelMarkersSetOptions",
+        "name": "AssignDisabled",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultBackgroundObjectType",
+        "name": "BackgroundObjectType",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Bold",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Bold",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:ComparisonValue",
+        "name": "Boolean",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "BottomMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "BottomMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "BottomMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultBoundaryShape",
+        "name": "BoundaryShape",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Offset",
+        "name": "CX",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "owner": "ap:Offset",
+        "name": "CY",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "CalloutFloatingTopicShape",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Collapsed",
+        "name": "Collapsed",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Color",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Color",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:NotesDefaultFont",
+        "name": "Color",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:MapViewGroup",
+        "name": "ColumnIndex",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Description",
+        "name": "Comments",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:ComparisonCriteria",
+        "name": "ComparisonCriteria",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultConnectionStyle",
+        "name": "ConnectionShape",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DateTimeStamps",
+        "name": "Created",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:PreviewImageData",
+        "name": "CustomImageType",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "DeadlineDateReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:AppliedStyleName",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Author",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:BackgroundFill",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Collapsed",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Color",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:ComparisonCriteria",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:ComparisonValue",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Creator",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:CreatorCompany",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DateTimeStamps",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultBackgroundObjectType",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultBoundaryShape",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultCircleSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultColor",
+        "name": "Dirty",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultColor",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "owner": "ap:DefaultConnectionStyle",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultFillet",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalDividerSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalSwimlaneCount",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalSwimlanesSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultImageThumbnailSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultLineStyle",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultRectangleSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultRelationshipLineShape",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsVisibility",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "Dirty",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultTextSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTitleText",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultVerticalDividerSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultVerticalSwimlaneCount",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultVerticalSwimlanesSize",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Description",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DocumentPath",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:EffectType",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:FillColorMarkersName",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:GroupName",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 24
+      },
+      {
+        "owner": "ap:IconMarkersSet",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Id",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "owner": "ap:Language",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:LastModificator",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:LayoutOptions",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Map",
+        "name": "Dirty",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:MatchOption",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Name",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 39
+      },
+      {
+        "owner": "ap:NotesDefaultFont",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Offset",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:OneStockIcon",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 22
+      },
+      {
+        "owner": "ap:PreviewImageData",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Selection",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:TaskPercentage",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TaskPercentageMarker",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TaskPercentageMarkersName",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TaskPriority",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TaskPriorityMarker",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TaskPriorityMarkersName",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Text",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:TextColorMarkersName",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TextLabelMarker",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:TextLabelMarkersSet",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TextLabelMarkersSetOptions",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Topic",
+        "name": "Dirty",
+        "recognition": "known",
+        "count": 3
+      },
+      {
+        "owner": "ap:TriggerType",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:Version",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:ViewContext",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:ZoomFactor",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "Dirty",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "DistanceBetweenSiblings",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "DistanceFromParent",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DocumentPath",
+        "name": "DocumentPath",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "DurationReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:EffectType",
+        "name": "EffectType",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:Task",
+        "name": "EffortReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "FadeNotSelectedObjects",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:BackgroundFill",
+        "name": "FillColor",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:Color",
+        "name": "FillColor",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultColor",
+        "name": "FillColor",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultColor",
+        "name": "FillColor",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "FixedHeight",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "FixedWidth",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:LayoutOptions",
+        "name": "FloatingTopicLayout",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "Gen",
+        "recognition": "unrecognized",
+        "count": 22
+      },
+      {
+        "owner": "ap:IconMarkersSet",
+        "name": "Gen",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Map",
+        "name": "Gen",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:TaskPercentageMarker",
+        "name": "Gen",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TaskPriorityMarker",
+        "name": "Gen",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TextLabelMarker",
+        "name": "Gen",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:TextLabelMarkersSet",
+        "name": "Gen",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Topic",
+        "name": "Gen",
+        "recognition": "known",
+        "count": 3
+      },
+      {
+        "owner": "ap:Task",
+        "name": "GeneralCost",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Task",
+        "name": "GeneralCostReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Id",
+        "name": "Guid",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "owner": "ap:DefaultCircleSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalDividerSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalSwimlanesSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultRectangleSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTextSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultVerticalDividerSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultVerticalSwimlanesSize",
+        "name": "Height",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultSubTopicsVisibility",
+        "name": "Hidden",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "HideCollapseSign",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:OneStockIcon",
+        "name": "IconType",
+        "recognition": "unrecognized",
+        "count": 22
+      },
+      {
+        "owner": "ap:PreviewImageData",
+        "name": "ImageType",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultConnectionStyle",
+        "name": "Index",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "Index",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "IsTidy",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "IsUsingFixedSize",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Italic",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "LabelFloatingTopicShape",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Language",
+        "name": "Language",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DateTimeStamps",
+        "name": "LastModified",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "LeftMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "LeftMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "LeftMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:CalloutSubTopicDefaultsGroup",
+        "name": "Level",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:LabelSubTopicDefaultsGroup",
+        "name": "Level",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:OrgChartSubTopicDefaultsGroup",
+        "name": "Level",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:RootSubTopicDefaultsGroup",
+        "name": "Level",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:TimelineSubTopicDefaultsGroup",
+        "name": "Level",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultColor",
+        "name": "LineColor",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultColor",
+        "name": "LineColor",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultLineStyle",
+        "name": "LineDashStyle",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultRelationshipLineShape",
+        "name": "LineShape",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultLineStyle",
+        "name": "LineWidth",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "MainTopicLineWidth",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Version",
+        "name": "Major",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultBoundaryShape",
+        "name": "Margin",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:MatchOption",
+        "name": "Match",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultImageThumbnailSize",
+        "name": "MaxFullSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "MilestoneReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "MinimumHeight",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "MinimumMainTopicsHeight",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TextLabelMarkersSetOptions",
+        "name": "MutuallyExclusive",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:AppliedStyleName",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:CreatorCompany",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:FillColorMarkersName",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Name",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:GroupName",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Name",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 39
+      },
+      {
+        "owner": "ap:NotesDefaultFont",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TaskPercentageMarkersName",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TaskPriorityMarkersName",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TextColorMarkersName",
+        "name": "Name",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfBoundaries",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfHyperlinks",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfNotes",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfPictures",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfRelationships",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfTopics",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Statistics",
+        "name": "NumberOfWords",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "OId",
+        "recognition": "unrecognized",
+        "count": 22
+      },
+      {
+        "owner": "ap:IconMarkersSet",
+        "name": "OId",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Map",
+        "name": "OId",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:TaskPercentageMarker",
+        "name": "OId",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TaskPriorityMarker",
+        "name": "OId",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:TextLabelMarker",
+        "name": "OId",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:TextLabelMarkersSet",
+        "name": "OId",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Topic",
+        "name": "OId",
+        "recognition": "known",
+        "count": 3
+      },
+      {
+        "owner": "ap:ObjectReference",
+        "name": "OIdRef",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "Padding",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "ParentChildSpacing",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "PlainText",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:DefaultTitleText",
+        "name": "PlainText",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Text",
+        "name": "PlainText",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultFillet",
+        "name": "Radius",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "ReadOnly",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:DefaultTitleText",
+        "name": "ReadOnly",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Text",
+        "name": "ReadOnly",
+        "recognition": "known",
+        "count": 2
+      },
+      {
+        "owner": "ap:TextLabelMarkersSetOptions",
+        "name": "ReadOnly",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "ResourcesCost",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Task",
+        "name": "ResourcesReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "RightMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "RightMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "RightMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:MapViewGroup",
+        "name": "RowIndex",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "SiblingSpacing",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Size",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Size",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:NotesDefaultFont",
+        "name": "Size",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "StartDateReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "StockIconType",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Strikethrough",
+        "recognition": "unrecognized",
+        "count": 12
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "StructureGrowthDirection",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "SubTopicShape",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsAlignment",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsAlignmentDualVertical",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsConnectionPoint",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsConnectionStyle",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsDepth",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsGrowth",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsGrowthDirection",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsShape",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsShapeWidthFactor",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsTreeConnectionPoint",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsVerticalAlignment",
+        "recognition": "unrecognized",
+        "count": 9
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "SubTopicsVerticalGrowthDirection",
+        "recognition": "unrecognized",
+        "count": 9
+      },
+      {
+        "owner": "ap:DefaultHorizontalSwimlaneCount",
+        "name": "SwimlaneCount",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultVerticalSwimlaneCount",
+        "name": "SwimlaneCount",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Task",
+        "name": "TaskPercentage",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:TaskPercentage",
+        "name": "TaskPercentage",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:Task",
+        "name": "TaskPercentageReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:TaskPriority",
+        "name": "TaskPriority",
+        "recognition": "unrecognized",
+        "count": 5
+      },
+      {
+        "owner": "ap:Task",
+        "name": "TaskPriorityReadOnly",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "TextAlignment",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "TextAlignment",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultTitleText",
+        "name": "TextAlignment",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "TextCapitalization",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:DefaultTitleText",
+        "name": "TextCapitalization",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultImageThumbnailSize",
+        "name": "ThumbnailSize",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "TopMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "TopMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "TopMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "TopicLayoutHorizontalAlignment",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "TopicLayoutVerticalAlignment",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "TopicTextAndImagePosition",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "TopicWidthControl",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:Task",
+        "name": "TotalCost",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:TriggerType",
+        "name": "TriggerType",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Underline",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:Font",
+        "name": "Underline",
+        "recognition": "unrecognized",
+        "count": 11
+      },
+      {
+        "owner": "ap:NamedRuleGroup",
+        "name": "UniqueIndex",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "Uri",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "UseAutoLayout",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "UseCurveAntialiasing",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "UseLineWidthForAllTopics",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "UseOrganicLines",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "UseStockIcon",
+        "recognition": "unrecognized",
+        "count": 2
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "UseTextAntialiasing",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Author",
+        "name": "UserEmail",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Creator",
+        "name": "UserEmail",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:LastModificator",
+        "name": "UserEmail",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Author",
+        "name": "UserName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Creator",
+        "name": "UserName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:LastModificator",
+        "name": "UserName",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "VerticalBottomMargin",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "VerticalBottomMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "VerticalBottomMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "VerticalCalloutFloatingTopicShape",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "VerticalDistanceBetweenSiblings",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "VerticalDistanceFromParent",
+        "recognition": "unrecognized",
+        "count": 10
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "VerticalLabelFloatingTopicShape",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "VerticalLeftMargin",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "VerticalLeftMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "VerticalLeftMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:Structure",
+        "name": "VerticalMainTopicLineWidth",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "VerticalRightMargin",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "VerticalRightMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "VerticalRightMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "VerticalSubTopicShape",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "VerticalSubTopicsConnectionPoint",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "VerticalSubTopicsConnectionStyle",
+        "recognition": "unrecognized",
+        "count": 9
+      },
+      {
+        "owner": "ap:DefaultSubTopicsShape",
+        "name": "VerticalSubTopicsTreeConnectionPoint",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "VerticalTextAlignment",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultText",
+        "name": "VerticalTextAlignment",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultTitleText",
+        "name": "VerticalTextAlignment",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultCalloutFloatingTopicShape",
+        "name": "VerticalTopMargin",
+        "recognition": "unrecognized",
+        "count": 4
+      },
+      {
+        "owner": "ap:DefaultLabelFloatingTopicShape",
+        "name": "VerticalTopMargin",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultSubTopicShape",
+        "name": "VerticalTopMargin",
+        "recognition": "unrecognized",
+        "count": 8
+      },
+      {
+        "owner": "ap:MapViewGroup",
+        "name": "ViewContext",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:ViewContext",
+        "name": "ViewContext",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:MapViewGroup",
+        "name": "ViewIndex",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:TopicViewGroup",
+        "name": "ViewIndex",
+        "recognition": "unrecognized",
+        "count": 3
+      },
+      {
+        "owner": "ap:DefaultCircleSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalDividerSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultHorizontalSwimlanesSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultRectangleSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTextSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultTopicLayout",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 9
+      },
+      {
+        "owner": "ap:DefaultVerticalDividerSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:DefaultVerticalSwimlanesSize",
+        "name": "Width",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:ZoomFactor",
+        "name": "ZoomFactor",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Custom",
+        "name": "[unrecognized]",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "cor:Uri",
+        "name": "xsi:nil",
+        "recognition": "unrecognized",
+        "count": 1
+      },
+      {
+        "owner": "ap:Map",
+        "name": "xsi:schemaLocation",
+        "recognition": "known",
+        "count": 1
+      },
+      {
+        "owner": "ap:IconMarker",
+        "name": "xsi:type",
+        "recognition": "unrecognized",
+        "count": 22
+      }
+    ]
+  },
+  "currentImportBaseline": {
+    "attempted": true,
+    "importsSuccessfully": true,
+    "counts": {
+      "topics": 3,
+      "notes": 0,
+      "links": 0,
+      "markers": 0,
+      "tags": 0,
+      "tasks": 0,
+      "images": 0,
+      "attachments": 0,
+      "callouts": 0,
+      "styles": 0,
+      "relationships": 0,
+      "boundaries": 0,
+      "floatingTopics": 0,
+      "summary": null
+    },
+    "warningCount": 0,
+    "errorCode": null
+  },
+  "lossAssessment": {
+    "method": "Observed current-import projection counts plus unchanged P0B adapter audit; writer was not invoked.",
+    "unknownXmlRetained": false,
+    "sourcePackageRetained": false,
+    "observedProjection": "Three topics; zero feature/style counts and zero warnings despite extensive unrecognized metadata/default structures.",
+    "writerRoundTrip": "NOT_OBSERVED_ON_REAL_INPUT",
+    "oracleOpen": "NOT_OBSERVED"
+  },
+  "analystReview": {
+    "reviewStatus": "sanitized-evidence-reviewed",
+    "genuineInspectionBasis": "User supplied a genuine local candidate and authorized private inspection; direct producer metadata independently read from Document.xml. No claim of independent application execution.",
+    "featureObservations": [
+      {
+        "intent": "root-only",
+        "status": "REAL_INSPECTED",
+        "notes": "Map/OneTopic/Topic scaffold observed; three topics imported, no fidelity or Oracle claim."
+      },
+      {
+        "intent": "three-level-tree",
+        "status": "REAL_PARTIAL_EVIDENCE",
+        "notes": "Three topics in two levels: one root with two children. Batch 2 three-level chain is a partial structural comparison only."
+      },
+      {
+        "intent": "styles-layout",
+        "status": "REAL_DISCOVERED",
+        "notes": "Defaults, style and view structures observed; importer reports zero explicit node styles. Preservation absent."
+      },
+      {
+        "intent": "unknown-extensions",
+        "status": "REAL_DISCOVERED",
+        "notes": "Custom namespaces and unrecognized structures observed; names of non-allowlisted extensions redacted. Preservation absent."
+      }
+    ],
+    "closestSyntheticId": "02-three-level-tree",
+    "comparison": [
+      {
+        "syntheticId": "01-root-only",
+        "category": "REAL_HAS_EXTRA_STRUCTURE",
+        "reason": "Shared Map/OneTopic/Topic scaffold in the Application/2003 namespace; real sample adds two child topics, preview/schema entries, defaults, catalogs, views, metadata and extensions.",
+        "extraStructure": [
+          "SubTopics with two children",
+          "Preview.png and four xsd files",
+          "style/default catalogs",
+          "document and view metadata",
+          "redacted custom extensions"
+        ]
+      },
+      {
+        "syntheticId": "02-three-level-tree",
+        "category": "SYNTHETIC_PARTIAL_MATCH",
+        "reason": "Closest topic-count/hierarchy fixture: both contain three Topic elements and the same Application/2003 tree vocabulary. Real sample is a two-level fork (1 root + 2 children); synthetic is a three-level chain. Minimal synthetic package has no preview or schema resources.",
+        "extraStructure": [
+          "two-level fork instead of three-level chain",
+          "preview and schema package resources",
+          "default/style/catalog/metadata/custom structures"
+        ]
+      }
+    ],
+    "summaryRepresentationObserved": false
+  }
+}

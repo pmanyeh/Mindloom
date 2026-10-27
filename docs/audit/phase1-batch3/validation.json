@@ -1,55 +1,117 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "timezone": "Asia/Taipei",
-  "repository": "https://github.com/pmanyeh/Mindloom",
   "branch": "feature/p1-batch3-real-corpus",
-  "acceptedBaseCommit": "661c271e40ab4dc7d22391abea7d9db7f48b89cb",
-  "acceptedBatch1Commit": "802d2b4190f267bd1dc07956c635a202962ea2fb",
-  "mainIntegration": "fast-forward; no rewritten shared history",
-  "baselineCiUrl": "https://github.com/pmanyeh/Mindloom/actions/runs/40266849726",
-  "baselineCiConclusion": "success",
+  "baseCommit": "10b66f6",
+  "acceptedBatch2Commit": "661c271e40ab4dc7d22391abea7d9db7f48b89cb",
   "platform": "Windows x64",
-  "node": "24.22.1",
+  "node": "24.19.0",
   "pnpm": "11.0.9",
-  "phase1Result": "BLOCKED ON REAL-CORPUS ACQUISITION",
-  "userConfirmedNoSource": true,
-  "realEvidence": {
-    "samples": 0,
-    "inspections": 0,
-    "pendingTargets": 8,
-    "comparisonRowsWithoutRealSample": 14,
-    "observedVersions": [],
-    "summary": "pending-format-evidence",
-    "noOpBaseline": "NOT_OBSERVED_ON_REAL_INPUT"
+  "install": {
+    "command": "corepack pnpm install --frozen-lockfile",
+    "exitCode": 0,
+    "lockfileChanged": false
   },
-  "focused": {
+  "phase1Result": "REAL_INSPECTION_GATE_MET_REVIEW_PENDING",
+  "realEvidence": {
+    "sampleLabel": "MM-01-minimal",
+    "registryId": "REAL-001",
+    "samples": 1,
+    "inspections": 1,
+    "provenanceClass": "private-local-only",
+    "rawCommitted": false,
+    "privateFingerprintsPublished": false,
+    "metadata": {
+      "producer": "MindManager",
+      "version": "20.1.231",
+      "platform": "Windows",
+      "source": "Document.xml xml-client processing instruction; not Oracle verification"
+    },
+    "packageEntries": 8,
+    "elementOccurrences": 338,
+    "unrecognizedElementOccurrences": 315,
+    "attributeOccurrences": 1201,
+    "unrecognizedAttributeOccurrences": 1166,
+    "currentImport": {
+      "successful": true,
+      "topics": 3,
+      "warnings": 0
+    },
+    "pendingTargets": 7,
+    "comparisonRowsWithoutRealSample": 12,
+    "summary": "pending-format-evidence",
+    "writerNoOpBaseline": "NOT_OBSERVED_ON_REAL_INPUT",
+    "oracleVerified": false
+  },
+  "originalVerification": {
+    "sourceBytesUnchanged": true,
+    "sourceMtimeUnchanged": true,
+    "privateCopyBytesUnchanged": true,
+    "privateCopyMtimeUnchanged": true,
+    "sourceAndCopyEqual": true,
+    "cliNormalizationEqual": true,
+    "privateCustodyRecord": "kept in ignored private area; no source path or hash published"
+  },
+  "baselineFocused": {
+    "exitCode": 0,
     "filesPassed": 5,
     "testsPassed": 142,
     "testsSkipped": 2
   },
-  "newIntakeTests": {
-    "passed": 21,
-    "failed": 0,
-    "inputClass": "manufactured workflow/security probes; not real corpus"
+  "initialFullGate": {
+    "exitCode": 1,
+    "filesPassed": 222,
+    "filesFailed": 1,
+    "testsPassed": 2570,
+    "testsFailed": 1,
+    "testsSkipped": 3,
+    "failure": "Unchanged app-integration panel-toggle test unable to find Brainstorm; retained without altering test or gate.",
+    "evidence": "baseline-gate.txt"
+  },
+  "isolatedUiRerun": {
+    "exitCode": 0,
+    "filesPassed": 1,
+    "testsPassed": 14,
+    "codeChanges": false,
+    "evidence": "ui-rerun.txt"
+  },
+  "focused": {
+    "command": "corepack pnpm exec vitest run test/mmap-real-corpus.test.ts test/mmap-corpus.test.ts test/mmap-inspector.test.ts test/phase0-mmap-audit.test.ts test/mmap.test.ts --reporter=default --reporter=junit",
+    "exitCode": 0,
+    "filesPassed": 5,
+    "testsPassed": 144,
+    "testsSkipped": 2,
+    "intakeTests": 23,
+    "privatePackageRequired": false
   },
   "gate": {
-    "command": "pnpm gate",
+    "command": "corepack pnpm gate",
+    "exitCode": 0,
     "result": "PASS",
     "filesPassed": 223,
-    "testsPassed": 2571,
+    "testsPassed": 2573,
     "testsSkipped": 3,
-    "statements": 90.59,
-    "lines": 90.59,
-    "branches": 87.23,
+    "statements": 90.62,
+    "lines": 90.62,
+    "branches": 87.25,
     "functions": 78.79,
     "firstLoadGzipKiB": 182.8,
     "sizeBudgetKiB": 184,
-    "rawLogSha256": "830d3efff95da445aa815aeadc8a66201b5bf6d5e8d35aacdf330d836b38304f",
     "warnings": [
-      "Existing large-chunk build warning retained.",
-      "PowerShell NativeCommandError wrapper reflects native stderr redirection; all fail-fast gate stages completed."
+      "Existing jsdom focus/print/navigation and Vite large-chunk warnings retained.",
+      "PowerShell native stderr redirection wrappers retained; actual exit code is zero."
     ]
   },
-  "protectedFiles": "Existing reader/writer, canonical model, inspector/normalizer/vocabulary, synthetic corpus, Phase 0 witnesses, existing Phase 1 tests and lockfile unchanged.",
-  "phaseBoundary": "P1D intake and Phase 1 evidence only. No Phase 2, preservation, writer fixes or general Oracle harness."
+  "sanitization": "All log warnings, counts, failures and skips retained; local workspace/profile/hostname and ANSI codes removed; line endings and trailing whitespace normalized. XML placeholders escaped. Raw logs remain ignored. No raw log or source fingerprints published.",
+  "protectedFiles": "Importer/writer/model, inspector/normalizer/knowledge, synthetic fixtures, Phase 0 loss witnesses, dependencies, lockfile and thresholds unchanged.",
+  "phaseBoundary": "P1D discovery for one sample only; no writer execution, preservation, Oracle harness or Phase 2. Subsequent user instruction authorizes a delivery commit and push of the current feature branch to origin only; no main merge.",
+  "finalPrivacyScan": {
+    "changedOrNewFilesChecked": 20,
+    "sourceIdentityPathFilenameOrFingerprintHits": 0,
+    "machineOrWorkspaceHitsInPublishedAudit": 0,
+    "rawMmapFilesInChange": 0,
+    "protectedSourceChanges": 0,
+    "sourceBytesAndMtimeUnchanged": true,
+    "privateCopyBytesUnchanged": true
+  }
 }

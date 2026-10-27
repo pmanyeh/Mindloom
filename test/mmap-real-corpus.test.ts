@@ -85,9 +85,19 @@ function mockSample(): RealSample {
   };
 }
 function registryWith(sample: RealSample) {
-  const manifest = structuredClone(readRealManifest());
+  const manifest = emptyRegistry();
   manifest.samples.push(sample);
   manifest.targets[0] = { id: "modern-minimal", status: "local-only", sampleIds: [sample.id] };
+  return manifest;
+}
+function emptyRegistry() {
+  const manifest = structuredClone(readRealManifest());
+  manifest.samples = [];
+  manifest.acquisitionStatus = "BLOCKED ON REAL-CORPUS ACQUISITION";
+  for (const target of manifest.targets) {
+    target.status = "pending";
+    target.sampleIds = [];
+  }
   return manifest;
 }
 function sandbox() {
@@ -102,11 +112,25 @@ function sandbox() {
   };
 }
 
-describe("real corpus acquisition registry — no genuine files supplied", () => {
-  it("keeps acquisition BLOCKED with zero samples and all eight targets pending", () => {
+describe("real corpus acquisition registry — reviewed private inspection", () => {
+  it("records one private inspection without publishing the raw package or fingerprints", () => {
     const manifest = readRealManifest();
-    expect(manifest.samples).toEqual([]);
-    expect(manifest.acquisitionStatus).toBe("BLOCKED ON REAL-CORPUS ACQUISITION");
+    expect(manifest.samples).toHaveLength(1);
+    expect(manifest.acquisitionStatus).toBe("evidence-available");
+    expect(manifest.samples[0]).toMatchObject({
+      id: "REAL-001",
+      provenanceClass: "private-local-only",
+      inspectionStatus: "inspected",
+      producer: "MindManager",
+      producerVersion: "20.1.231",
+      platform: "Windows",
+      publicCommitAllowed: false,
+      rawCommitted: false,
+      fixtureFile: null,
+      sha256: null,
+      normalizedInspectionFingerprint: null,
+      fingerprintPublicationAllowed: false,
+    });
     expect(manifest.targets.map((target) => target.id)).toEqual([
       "modern-minimal",
       "modern-feature-mixed",
@@ -118,12 +142,17 @@ describe("real corpus acquisition registry — no genuine files supplied", () =>
       "legacy",
     ]);
     expect(
-      manifest.targets.every(
-        (target) => target.status === "pending" && target.sampleIds.length === 0,
-      ),
+      manifest.targets
+        .slice(1)
+        .every((target) => target.status === "pending" && target.sampleIds.length === 0),
     ).toBe(true);
+    expect(manifest.targets[0]).toEqual({
+      id: "modern-minimal",
+      status: "local-only",
+      sampleIds: ["REAL-001"],
+    });
     expect(readdirSync(REAL_ROOT).filter((file) => file.endsWith(".mmap"))).toEqual([]);
-    // No vacuous "real fixtures passed" assertion: there is explicitly no real-file test evidence.
+    // Public CI checks reviewed evidence, never pretends to rerun the absent private package.
   });
 
   it("publishes a machine-readable schema covering every required sample field", () => {
@@ -135,7 +164,7 @@ describe("real corpus acquisition registry — no genuine files supplied", () =>
   });
 
   it("rejects false completion, missing provenance and extra private metadata fields", () => {
-    const empty = readRealManifest();
+    const empty = emptyRegistry();
     expect(() =>
       validateRealManifest({ ...empty, acquisitionStatus: "evidence-available" }),
     ).toThrow(/Empty acquisition/);
@@ -255,8 +284,8 @@ describe("real corpus acquisition registry — no genuine files supplied", () =>
   });
 
   it("derives deterministic NO_REAL_SAMPLE comparisons and an honest feature inventory", () => {
-    const first = realCorpusStatus();
-    expect(first).toEqual(realCorpusStatus());
+    const first = realCorpusStatus(emptyRegistry());
+    expect(first).toEqual(realCorpusStatus(emptyRegistry()));
     expect(first.realSampleCount).toBe(0);
     expect(first.comparison).toHaveLength(14);
     expect(
@@ -275,6 +304,77 @@ describe("real corpus acquisition registry — no genuine files supplied", () =>
     expect(readFileSync(resolve("docs/compatibility/PHASE1_FEATURE_INVENTORY.md"), "utf8")).toBe(
       renderFeatureInventory(),
     );
+  });
+
+  it("counts reviewed inspections and comparisons while keeping declarations and Oracle claims separate", () => {
+    const status = realCorpusStatus();
+    expect(status.realSampleCount).toBe(1);
+    expect(status.reviewedRealInspectionCount).toBe(1);
+    expect(status.phase1Result).toBe("REAL_INSPECTION_GATE_MET_REVIEW_PENDING");
+    expect(status.comparison[0].category).toBe("REAL_HAS_EXTRA_STRUCTURE");
+    expect(status.comparison[1].category).toBe("SYNTHETIC_PARTIAL_MATCH");
+    expect(status.comparison[1].observedPackagePaths).toContain("Document.xml");
+    expect(status.comparison.slice(2).every((row) => row.category === "NO_REAL_SAMPLE")).toBe(true);
+    expect(status.currentImportBaseline).toBe("OBSERVED_ON_REAL_INPUT");
+    expect(status.noOpBaseline).toBe("NOT_OBSERVED_ON_REAL_INPUT");
+    expect(status.featureInventory.find((row) => row.feature === "Summary")?.status).toBe(
+      "PENDING_FORMAT_EVIDENCE",
+    );
+    expect(status.featureInventory.every((row) => row.unknownPreservation === "NO")).toBe(true);
+    const declarationOnly = realCorpusStatus(
+      registryWith({ ...mockSample(), inspectionStatus: "inspected" }),
+    );
+    expect(declarationOnly.reviewedRealInspectionCount).toBe(0);
+    expect(declarationOnly.comparison[0].category).toBe("UNKNOWN");
+  });
+
+  it("keeps public structural evidence value-free and consistent with its reduced inventory", () => {
+    const sample = readRealManifest().samples[0];
+    const evidence = JSON.parse(
+      readFileSync(resolve(REAL_ROOT, sample.evidenceFile as string), "utf8"),
+    );
+    expect(evidence.id).toBe(sample.id);
+    expect(evidence.oracleVerified).toBe(false);
+    expect(evidence.roundTripSafe).toBe(false);
+    expect(evidence.privacy.rawSensitiveMetadataFound).toBe(true);
+    expect(evidence.privacy.publishedEvidenceSensitiveMetadataFound).toBe(false);
+    expect(evidence.packageEntries).toHaveLength(8);
+    expect(evidence.currentImportBaseline.counts.topics).toBe(3);
+    const elements = evidence.reviewedInventory.elements as {
+      count: number;
+      recognition: string;
+    }[];
+    const attributes = evidence.reviewedInventory.attributes as {
+      count: number;
+      recognition: string;
+    }[];
+    expect(elements.reduce((sum, row) => sum + row.count, 0)).toBe(
+      evidence.inventoryTotals.elementOccurrences,
+    );
+    expect(attributes.reduce((sum, row) => sum + row.count, 0)).toBe(
+      evidence.inventoryTotals.attributeOccurrences,
+    );
+    expect(
+      elements
+        .filter((row) => row.recognition === "unrecognized")
+        .reduce((sum, row) => sum + row.count, 0),
+    ).toBe(315);
+    expect(
+      attributes
+        .filter((row) => row.recognition === "unrecognized")
+        .reduce((sum, row) => sum + row.count, 0),
+    ).toBe(1166);
+    const serialized = JSON.stringify(evidence);
+    expect(serialized).not.toMatch(
+      /\b[A-Za-z]:[\\/]|file:\/\/|\\\\|[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|[a-f0-9]{64}/,
+    );
+    for (const row of [...elements, ...attributes])
+      expect(Object.keys(row).some((key) => /value|text|crc|size|fingerprint/i.test(key))).toBe(
+        false,
+      );
+    expect(
+      readFileSync(resolve(REAL_ROOT, sample.publicationReview.evidence as string), "utf8"),
+    ).toContain("private-local-only");
   });
 });
 
@@ -440,7 +540,7 @@ describe("local-only intake — manufactured privacy/security probes", () => {
         { encoding: "utf8" },
       );
     expect(JSON.parse(cli("status").stdout).phase1Result).toBe(
-      "BLOCKED ON REAL-CORPUS ACQUISITION",
+      "REAL_INSPECTION_GATE_MET_REVIEW_PENDING",
     );
     expect(cli("status", "--format", "markdown").stdout).toBe(renderFeatureInventory());
     expect(cli("intake").status).toBe(2);

@@ -15,10 +15,11 @@ and [the Batch 2 report](phase1-batch2-report.md). There are 14 manifest slots;
 13 produce packages, while summary remains pending format evidence.
 
 Phase 1 Batch 3 provides [private/public intake rules](docs/format/MMAP_REAL_CORPUS.md),
-`pnpm mmap-real:status` and opt-in local inspection. The user currently has no real
-sample source: Batch 3 and [Phase 1](phase1-report.md) remain **BLOCKED ON REAL-CORPUS
-ACQUISITION**. See [the Batch 3 report](phase1-batch3-report.md); passing tooling tests
-does not complete real-corpus acquisition.
+`pnpm mmap-real:status` and opt-in local inspection. **MM-01-minimal / REAL-001** is
+the first genuine inspected sample, private-local-only, with sanitized structural
+evidence. MindManager 20.1.231 / Windows are document metadata, not Oracle verification.
+See [the Batch 3 report](phase1-batch3-report.md) and [Phase 1 review status](phase1-report.md).
+Summary format and wider corpus coverage remain pending; Phase 2 has not begun.
 
 The audited upstream commit is `65964ac06937514cf9805a2b1198cc20f1e83425`.
 The current MMAP adapter is lossy; high-fidelity compatibility and MindManager acceptance

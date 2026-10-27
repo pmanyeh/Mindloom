@@ -1,0 +1,16 @@
+
+ RUN  v2.1.9 <workspace>
+
+ ✓ test/phase0-mmap-audit.test.ts (10 tests) 41ms
+ ✓ test/mmap.test.ts (57 tests | 2 skipped) 115ms
+ ✓ test/mmap-real-corpus.test.ts (21 tests) 1339ms
+   ✓ local-only intake — manufactured privacy/security probes > runs status/error CLI paths and the opt-in current importer in a plain Node process 1231ms
+ ✓ test/mmap-inspector.test.ts (32 tests) 1883ms
+   ✓ MMAP normalization and standalone CLI > runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes 1813ms
+ ✓ test/mmap-corpus.test.ts (24 tests) 9202ms
+   ✓ Mindloom Phase 1 Batch 2 synthetic corpus > generates twice across timezones and runs both real CLI modes for every materialized fixture 9005ms
+
+ Test Files  5 passed (5)
+      Tests  142 passed | 2 skipped (144)
+   Start at  10:27:47
+   Duration  12.07s (transform 578ms, setup 1.00s, collect 1.18s, tests 12.58s, environment 2ms, prepare 8.01s)

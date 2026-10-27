@@ -1,5 +1,14 @@
 # Changelog
 
+## Mindloom — 2026-10-27
+
+Phase 1 Batch 3 records the first genuine private-local inspection, MM-01-minimal
+(REAL-001), with reviewed structural inventories, current-import counts and a
+synthetic comparison. Raw package and private fingerprints remain ignored.
+MindManager 20.1.231 / Windows are observed document metadata, not Oracle evidence.
+Summary remains pending-format-evidence. No importer, writer, model or vocabulary
+changes; Phase 2 remains unauthorized.
+
 ## Mindloom — 2026-10-26
 
 Phase 1 Batch 3 adds provenance/publication policy validation, private-only local

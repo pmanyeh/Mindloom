@@ -1,0 +1,13 @@
+# MM-01-minimal / REAL-001 structural publication review
+
+Reviewed 2026-10-27 (Asia/Taipei) under the user's explicit private-intake and sanitized-evidence instruction.
+
+The original is **private-local-only**, not sanitized and not approved for raw publication. It contains identity fields and a local document path. `permissionVerified: false` means raw publication rights have not been established. `sensitiveMetadataFound: false` in the registry applies to the published structural evidence; `rawSensitiveMetadataFound: true` in the evidence records the original's privacy finding.
+
+Only `evidence/REAL-001.json` is approved as reduced structural evidence. The unchanged sanitizer's shape was reviewed, then supplemented with the eight fixed standard package paths, canonical vendor/W3C structural names, recognition labels, counts, and an analyst comparison. Vendor element names and unqualified attribute names were examined as format vocabulary. Names of identity/path fields describe structure only; their values are excluded. Non-allowlisted namespace URIs and extension names remain redacted. The public evidence includes no original filename, user/machine identity, local/UNC path, text, general attribute values, IDs, timestamps, preview pixels, XSD payloads, CRCs, sizes, raw SHA-256 or raw-normalization fingerprint. No fingerprint is published, including the optional reduced-shape fingerprint.
+
+The producer processing instruction was independently read locally: `xml-client` has `name="MindManager"`, `version="20.1.231"`, `platform="Windows"`. These are observed document metadata, consistent with the supplied external review. They do not prove an independently observed MindManager run, authenticity against forgery, licensed installation, Oracle compatibility or round-trip safety.
+
+The authoritative candidate is the workspace three-topic package with exactly eight entries. A nearby 1,161-topic map was accidentally copied during initial selection; its intake outputs were isolated in the ignored private area and excluded from the registry, public evidence and all conclusions. Only the matching candidate was rerun as REAL-001. Source bytes and mtime, and the corrected private copy's bytes and mtime, were verified unchanged after inspection. Private custody hashes and full CLI outputs stay ignored.
+
+Review scope is structural publication safety and evidence consistency, not legal certification or a human MindManager execution review. The user has authorized this reduced evidence; public raw-package rights remain unestablished. Reproduction of the real inspection requires access to the private original. Tests validate the public evidence's consistency and policy without bundling the file.

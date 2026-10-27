@@ -1,13 +1,16 @@
 {
   "schemaVersion": 1,
-  "phase1Result": "BLOCKED ON REAL-CORPUS ACQUISITION",
-  "realSampleCount": 0,
-  "inspectedRealSampleDeclarations": 0,
+  "phase1Result": "REAL_INSPECTION_GATE_MET_REVIEW_PENDING",
+  "realSampleCount": 1,
+  "inspectedRealSampleDeclarations": 1,
+  "reviewedRealInspectionCount": 1,
   "targetMatrix": [
     {
       "id": "modern-minimal",
-      "status": "pending",
-      "sampleIds": []
+      "status": "local-only",
+      "sampleIds": [
+        "REAL-001"
+      ]
     },
     {
       "id": "modern-feature-mixed",
@@ -49,22 +52,66 @@
     {
       "syntheticId": "01-root-only",
       "syntheticStatus": "generated",
-      "realSampleIds": [],
-      "category": "NO_REAL_SAMPLE",
-      "reason": "No genuine real sample has been acquired for this feature.",
-      "observedPackagePaths": null,
-      "observedNamespaces": null,
-      "observedExtraStructure": null
+      "realSampleIds": [
+        "REAL-001"
+      ],
+      "category": "REAL_HAS_EXTRA_STRUCTURE",
+      "reason": "Shared Map/OneTopic/Topic scaffold in the Application/2003 namespace; real sample adds two child topics, preview/schema entries, defaults, catalogs, views, metadata and extensions.",
+      "observedPackagePaths": [
+        "Document.xml",
+        "Preview.png",
+        "bin/",
+        "xsd/",
+        "xsd/MindManagerApplication.xsd",
+        "xsd/MindManagerCore.xsd",
+        "xsd/MindManagerDelta.xsd",
+        "xsd/MindManagerPrimitive.xsd"
+      ],
+      "observedNamespaces": [
+        "[unrecognized]",
+        "http://schemas.mindjet.com/MindManager/Application/2003",
+        "http://schemas.mindjet.com/MindManager/Core/2003",
+        "http://schemas.mindjet.com/MindManager/Primitive/2003",
+        "http://www.w3.org/2001/XMLSchema-instance"
+      ],
+      "observedExtraStructure": [
+        "SubTopics with two children",
+        "Preview.png and four xsd files",
+        "style/default catalogs",
+        "document and view metadata",
+        "redacted custom extensions"
+      ]
     },
     {
       "syntheticId": "02-three-level-tree",
       "syntheticStatus": "generated",
-      "realSampleIds": [],
-      "category": "NO_REAL_SAMPLE",
-      "reason": "No genuine real sample has been acquired for this feature.",
-      "observedPackagePaths": null,
-      "observedNamespaces": null,
-      "observedExtraStructure": null
+      "realSampleIds": [
+        "REAL-001"
+      ],
+      "category": "SYNTHETIC_PARTIAL_MATCH",
+      "reason": "Closest topic-count/hierarchy fixture: both contain three Topic elements and the same Application/2003 tree vocabulary. Real sample is a two-level fork (1 root + 2 children); synthetic is a three-level chain. Minimal synthetic package has no preview or schema resources.",
+      "observedPackagePaths": [
+        "Document.xml",
+        "Preview.png",
+        "bin/",
+        "xsd/",
+        "xsd/MindManagerApplication.xsd",
+        "xsd/MindManagerCore.xsd",
+        "xsd/MindManagerDelta.xsd",
+        "xsd/MindManagerPrimitive.xsd"
+      ],
+      "observedNamespaces": [
+        "[unrecognized]",
+        "http://schemas.mindjet.com/MindManager/Application/2003",
+        "http://schemas.mindjet.com/MindManager/Core/2003",
+        "http://schemas.mindjet.com/MindManager/Primitive/2003",
+        "http://www.w3.org/2001/XMLSchema-instance"
+      ],
+      "observedExtraStructure": [
+        "two-level fork instead of three-level chain",
+        "preview and schema package resources",
+        "default/style/catalog/metadata/custom structures"
+      ]
     },
     {
       "syntheticId": "03-notes",
@@ -191,22 +238,22 @@
     {
       "feature": "Root / text",
       "syntheticEvidence": "01-root-only: generated",
-      "realEvidence": "NO_REAL_SAMPLE",
+      "realEvidence": "REAL-001: reviewed structural evidence",
       "currentParser": "parsed",
       "currentWriter": "emitted; IDs regenerated",
       "unknownPreservation": "NO",
-      "status": "SYNTHETIC_OR_STATIC_ONLY",
-      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+      "status": "REAL_INSPECTED",
+      "notes": "Map/OneTopic/Topic scaffold observed; three topics imported, no fidelity or Oracle claim."
     },
     {
       "feature": "Topic hierarchy",
       "syntheticEvidence": "02-three-level-tree: generated",
-      "realEvidence": "NO_REAL_SAMPLE",
+      "realEvidence": "REAL-001: reviewed structural evidence",
       "currentParser": "parsed",
       "currentWriter": "emitted",
       "unknownPreservation": "NO",
-      "status": "SYNTHETIC_OR_STATIC_ONLY",
-      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+      "status": "REAL_PARTIAL_EVIDENCE",
+      "notes": "Three topics in two levels: one root with two children. Batch 2 three-level chain is a partial structural comparison only."
     },
     {
       "feature": "Notes",
@@ -331,24 +378,25 @@
     {
       "feature": "Styles / layout",
       "syntheticEvidence": "static audit / existing unit tests only",
-      "realEvidence": "NO_REAL_SAMPLE",
+      "realEvidence": "REAL-001: reviewed structural evidence",
       "currentParser": "selected explicit styles",
       "currentWriter": "mostly omitted/defaulted",
       "unknownPreservation": "NO",
-      "status": "SYNTHETIC_OR_STATIC_ONLY",
-      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+      "status": "REAL_DISCOVERED",
+      "notes": "Defaults, style and view structures observed; importer reports zero explicit node styles. Preservation absent."
     },
     {
       "feature": "Unknown extensions",
       "syntheticEvidence": "static audit / existing unit tests only",
-      "realEvidence": "NO_REAL_SAMPLE",
+      "realEvidence": "REAL-001: reviewed structural evidence",
       "currentParser": "not retained",
       "currentWriter": "not preserved",
       "unknownPreservation": "NO",
-      "status": "SYNTHETIC_OR_STATIC_ONLY",
-      "notes": "P0B/accepted tests describe current code; no Oracle or real-file fidelity claim."
+      "status": "REAL_DISCOVERED",
+      "notes": "Custom namespaces and unrecognized structures observed; names of non-allowlisted extensions redacted. Preservation absent."
     }
   ],
   "summaryDiscovery": "pending-format-evidence; no observed representation",
+  "currentImportBaseline": "OBSERVED_ON_REAL_INPUT",
   "noOpBaseline": "NOT_OBSERVED_ON_REAL_INPUT"
 }

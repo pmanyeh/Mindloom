@@ -1,18 +1,18 @@
 
  RUN  v2.1.9 <workspace>
 
- ✓ test/phase0-mmap-audit.test.ts (10 tests) 41ms
- ✓ test/mmap.test.ts (57 tests | 2 skipped) 79ms
- ✓ test/mmap-real-corpus.test.ts (21 tests) 904ms
-   ✓ local-only intake — manufactured privacy/security probes > runs status/error CLI paths and the opt-in current importer in a plain Node process 824ms
- ✓ test/mmap-inspector.test.ts (32 tests) 1242ms
-   ✓ MMAP normalization and standalone CLI > runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes 1205ms
- ✓ test/mmap-corpus.test.ts (24 tests) 3596ms
-   ✓ Mindloom Phase 1 Batch 2 synthetic corpus > generates twice across timezones and runs both real CLI modes for every materialized fixture 3349ms
+ ✓ test/phase0-mmap-audit.test.ts (10 tests) 51ms
+ ✓ test/mmap.test.ts (57 tests | 2 skipped) 128ms
+ ✓ test/mmap-real-corpus.test.ts (23 tests) 1582ms
+   ✓ local-only intake — manufactured privacy/security probes > runs status/error CLI paths and the opt-in current importer in a plain Node process 1422ms
+ ✓ test/mmap-inspector.test.ts (32 tests) 2174ms
+   ✓ MMAP normalization and standalone CLI > runs the CLI in a plain Node subprocess and reports deterministic JSON and exit codes 2095ms
+ ✓ test/mmap-corpus.test.ts (24 tests) 7664ms
+   ✓ Mindloom Phase 1 Batch 2 synthetic corpus > generates twice across timezones and runs both real CLI modes for every materialized fixture 7431ms
 
  Test Files  5 passed (5)
-      Tests  142 passed | 2 skipped (144)
-   Start at  12:28:15
-   Duration  4.32s (transform 327ms, setup 575ms, collect 997ms, tests 5.86s, environment 1ms, prepare 672ms)
+      Tests  144 passed | 2 skipped (146)
+   Start at  10:38:58
+   Duration  8.89s (transform 686ms, setup 696ms, collect 1.23s, tests 11.60s, environment 1ms, prepare 1.60s)
 
-JUNIT report written to <workspace>/.tmp/phase0-toolchain/p3-focused.junit.xml
+JUNIT report written to <workspace>/.tmp/batch3-focused.junit.private.xml
