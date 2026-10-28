@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "timezone": "Asia/Taipei",
+  "phase": "v2 Phase 2 - Product Parity Baseline",
+  "result": "PASS_AUDIT_PLANNING_ONLY",
+  "baseCommit": "c9f802d07bc7eece0b47b89f4d034934b67f4265",
+  "branch": "feature/roadmap-v2-product-parity",
+  "platform": "Windows x64",
+  "node": "24.19.0",
+  "pnpm": "11.0.9",
+  "install": {
+    "command": "corepack pnpm install --frozen-lockfile",
+    "exitCode": 0,
+    "dependenciesChanged": false,
+    "lockfileChanged": false
+  },
+  "acceptedIntegration": {
+    "id": 40622910848,
+    "status": "completed",
+    "conclusion": "success",
+    "event": "push",
+    "url": "https://github.com/pmanyeh/Mindloom/actions/runs/40622910848",
+    "headSha": "c9f802d07bc7eece0b47b89f4d034934b67f4265",
+    "jobs": [
+      {
+        "name": "gate",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "staticChecks": {
+    "result": "PASS",
+    "baseCommit": "c9f802d07bc7eece0b47b89f4d034934b67f4265",
+    "documentsChecked": 10,
+    "localLinksChecked": 178,
+    "matrixRows": 93,
+    "areaRowCounts": {
+      "A": 10,
+      "B": 11,
+      "C": 14,
+      "D": 8,
+      "E": 8,
+      "F": 5,
+      "G": 6,
+      "H": 10,
+      "I": 11,
+      "J": 10
+    },
+    "requiredKeyboardEntries": 14,
+    "mindManagerReferences": "all UNKNOWN; no observed/verified parity claims",
+    "evidenceGroups": 15,
+    "historicalReportsAndAuditUnchanged": true,
+    "productionTestsToolsConfigsDependenciesLockfileLicensesUnchanged": true,
+    "v1ArchiveByteIdentical": true,
+    "acceptedMainAndOriginMainAtAcceptedHead": true,
+    "changesDocumentationOnly": true,
+    "rawMmapFilesAdded": 0,
+    "privateSourceMarkerHits": 0
+  },
+  "gate": {
+    "command": "corepack pnpm gate",
+    "exitCode": 0,
+    "testFilesPassed": 223,
+    "testsPassed": 2573,
+    "testsSkipped": 3,
+    "totalTests": 2576,
+    "statements": 90.62,
+    "lines": 90.62,
+    "branches": 87.25,
+    "functions": 78.79,
+    "firstLoadGzipKiB": 182.8,
+    "firstLoadBudgetKiB": 184,
+    "stages": [
+      "typecheck",
+      "biome",
+      "knip",
+      "feature catalogue",
+      "coverage tests",
+      "Vite/PWA build",
+      "size budget"
+    ],
+    "attempts": 1,
+    "thresholdsWeakened": false,
+    "newSkips": false,
+    "warningsRetained": [
+      "Existing jsdom focus/print/navigation diagnostics",
+      "Vite dynamic-import/large-chunk warnings",
+      "PowerShell NativeCommandError stderr wrapper; actual exit code zero"
+    ]
+  },
+  "scope": {
+    "productionBehaviorChanged": false,
+    "sourceTestsToolsScriptsOrCiChanged": false,
+    "historicalPhase0Phase1ReportsOrAuditChanged": false,
+    "legalAndProvenanceFilesChanged": false,
+    "v1PlanArchivedByteIdentically": true,
+    "uiFeaturesImplemented": false,
+    "mindManagerSessionsPerformed": 0,
+    "referenceBehavior": "UNKNOWN",
+    "summaryResearchPerformed": false,
+    "compatibilityEnvelopeOrPreserveUnknownImplemented": false,
+    "phase9Started": false,
+    "firstImplementationBatch": "P4-B1 topic creation, commit/cancel and focus contract - recommendation only",
+    "firstBatchStarted": false,
+    "planningBranchCommittedAtValidationTime": false,
+    "planningBranchPushedAtValidationTime": false
+  },
+  "evidenceSanitization": "Workspace/profile/hostname and ANSI removed; line endings and trailing whitespace normalized. Warnings/counts retained; raw logs remain ignored. No private package or raw fingerprint published.",
+  "delivery": {
+    "userAuthorizedCommitAndPush": true,
+    "targetRemote": "origin",
+    "targetBranch": "feature/roadmap-v2-product-parity",
+    "mainMergeAuthorized": false,
+    "implementationAuthorized": false
+  }
+}

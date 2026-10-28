@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "baseCommit": "c9f802d07bc7eece0b47b89f4d034934b67f4265",
+  "documentsChecked": 10,
+  "localLinksChecked": 178,
+  "matrixRows": 93,
+  "areaRowCounts": {
+    "A": 10,
+    "B": 11,
+    "C": 14,
+    "D": 8,
+    "E": 8,
+    "F": 5,
+    "G": 6,
+    "H": 10,
+    "I": 11,
+    "J": 10
+  },
+  "requiredKeyboardEntries": 14,
+  "mindManagerReferences": "all UNKNOWN; no observed/verified parity claims",
+  "evidenceGroups": 15,
+  "historicalReportsAndAuditUnchanged": true,
+  "productionTestsToolsConfigsDependenciesLockfileLicensesUnchanged": true,
+  "v1ArchiveByteIdentical": true,
+  "acceptedMainAndOriginMainAtAcceptedHead": true,
+  "changesDocumentationOnly": true,
+  "rawMmapFilesAdded": 0,
+  "privateSourceMarkerHits": 0
+}

@@ -1,7 +1,9 @@
 # Mindloom — working agreement
 
-Mindloom is a local-first mind-map editor targeting high-fidelity MindManager
-compatibility, based on **MindMap Studio** (Apache-2.0). The upstream foundation
+Mindloom is a local-first mind-map editor based on **MindMap Studio** (Apache-2.0).
+Its v2.0 strategy is to first reach MindManager functional and workflow parity,
+then deliberately improve into an independent product. Compatibility is an
+important supporting track, not the immediate primary execution track. The upstream foundation
 uses React 19 + Vite + TypeScript, built on **React Flow** (`@xyflow/react`, MIT),
 and is a sibling to TP Studio and MECE Studio. Retain its provenance and useful
 engineering practices within Mindloom's authorized scope.
@@ -9,13 +11,30 @@ engineering practices within Mindloom's authorized scope.
 ## Roadmap and current authorization
 
 - [`MINDLOOM_MASTER_PLAN.md`](MINDLOOM_MASTER_PLAN.md) is the authoritative
-  Mindloom roadmap and defines its long-term scope.
+  **v2.0** Mindloom roadmap and defines its long-term scope.
 - [`AGENTS.md`](AGENTS.md) and the phase reports define current authorization
   boundaries, subject to explicit user instructions. A roadmap item alone does
   not authorize work in a later phase or batch.
 - Upstream MindMap Studio documentation provides engineering context and
   provenance; it does not override the Mindloom roadmap or current authorization
   boundaries.
+- Current authorization is **Phase 2 — Product Parity Baseline, audit/planning
+  only** on `feature/roadmap-v2-product-parity`, after accepted Batch 3 integration
+  into main and successful CI. Deliver the plan, product inventories, behavior
+  protocol, report and one recommended first implementation batch, then STOP.
+  Do not implement UI features or begin a proposed batch without explicit authorization.
+- Old v1 Phase 2 (Compatibility Envelope) is now part of v2 Phase 9. No Compatibility
+  Envelope, Preserve Unknown, Summary reverse engineering, production source redesign
+  or Oracle implementation is authorized by this planning task.
+- Preserve historical Phase 0/1 reports and existing audit evidence unchanged.
+  Phase 1 FOUNDATION COMPLETE describes reusable research, not all old fidelity gates
+  passing. REAL-001 remains private-local-only; its producer metadata is not Oracle evidence.
+- Check existing source/tests before proposing a feature: KEEP / ADAPT / EXTEND /
+  REPLACE / UNKNOWN. Unobserved MindManager behavior stays UNKNOWN; research only
+  until a small implementation decision is clear. Replicate observable behavior,
+  never proprietary implementation or restricted brand/icon assets.
+- Engineering priorities: Data Safety > Correctness > Workflow Fidelity >
+  Compatibility > Performance > Visual Polish.
 
 ## The ship loop — "green before done"
 

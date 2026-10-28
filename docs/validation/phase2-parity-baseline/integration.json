@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "cleanAtStart": true,
+  "beforeLocalAndOriginMain": "661c271e40ab4dc7d22391abea7d9db7f48b89cb",
+  "intakeCommit": "10b66f6e6126daf36dd23cbcbd28a87cd16cfefd",
+  "acceptedBatch3Head": "c9f802d07bc7eece0b47b89f4d034934b67f4265",
+  "exactParentChainVerified": true,
+  "mergeCommand": "git merge --ff-only c9f802d07bc7eece0b47b89f4d034934b67f4265",
+  "mergeResult": "fast-forward",
+  "pushCommand": "git push origin main",
+  "pushResult": "success",
+  "remote": "https://github.com/pmanyeh/Mindloom.git",
+  "pushDefault": "origin",
+  "upstreamPushUrl": "DISABLED",
+  "forcePush": false,
+  "historyRewritten": false,
+  "ci": {
+    "id": 40622910848,
+    "status": "completed",
+    "conclusion": "success",
+    "event": "push",
+    "url": "https://github.com/pmanyeh/Mindloom/actions/runs/40622910848",
+    "headSha": "c9f802d07bc7eece0b47b89f4d034934b67f4265",
+    "jobs": [
+      {
+        "name": "gate",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "planningBranch": "feature/roadmap-v2-product-parity",
+  "planningBranchCreatedAfterCiSuccess": true,
+  "planningBranchCommittedOrPushedAtIntegrationTime": false
+}

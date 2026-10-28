@@ -1,8 +1,23 @@
 # Mindloom
 
-This repository tracks the Mindloom plan and Phase 0 audit on top of MindMap Studio.
-Start with [the master plan](MINDLOOM_MASTER_PLAN.md), [the Phase 0 report](phase0-report.md),
-and [the baseline decision](docs/architecture/ADR-001-editor-baseline.md).
+Mindloom builds on MindMap Studio: first reach high functional and workflow parity
+with MindManager, then deliberately improve into an independent product.
+**Replicate first. Understand where necessary. Improve deliberately.**
+
+The authoritative [Master Plan v2.0](MINDLOOM_MASTER_PLAN.md) makes Product Parity
+the active primary track. Format compatibility remains an important supporting
+track. Current **Phase 2 — Product Parity Baseline** authorizes documentation and
+audit/planning only, with no UI implementation or later phase implicitly authorized.
+See the [parity matrix](docs/product/MINDMANAGER_PARITY_MATRIX.md),
+[UI surface map](docs/product/MINDMANAGER_UI_SURFACE_MAP.md),
+[capability baseline](docs/product/MINDMAP_STUDIO_CAPABILITY_BASELINE.md),
+[behavior protocol](docs/research/MINDMANAGER_BEHAVIOR_PROTOCOL.md), and
+[Phase 2 report](phase2-parity-baseline-report.md).
+
+Phase 0/1 reports and audit evidence below are historical foundations, preserved
+with their original limitations. The [v1.0 plan](docs/history/MINDLOOM_MASTER_PLAN_V1.0.md)
+is archived unchanged. Start with the [Phase 0 report](phase0-report.md) and
+[baseline decision](docs/architecture/ADR-001-editor-baseline.md) for provenance.
 
 Phase 1 Batch 1 adds independent read-only inspection commands:
 `pnpm mmap-inspect file.mmap` and `pnpm --silent mmap-normalize file.mmap`.
@@ -19,7 +34,10 @@ Phase 1 Batch 3 provides [private/public intake rules](docs/format/MMAP_REAL_COR
 the first genuine inspected sample, private-local-only, with sanitized structural
 evidence. MindManager 20.1.231 / Windows are document metadata, not Oracle verification.
 See [the Batch 3 report](phase1-batch3-report.md) and [Phase 1 review status](phase1-report.md).
-Summary format and wider corpus coverage remain pending; Phase 2 has not begun.
+Summary format, writer round-trip, Oracle and wider corpus coverage remain pending.
+The v2 roadmap marks Phase 1 research foundations complete without retroactively
+passing all old compatibility gates. The old Phase 2 preservation work is deferred
+to v2 Phase 9; the new Phase 2 is product-parity planning only.
 
 The audited upstream commit is `65964ac06937514cf9805a2b1198cc20f1e83425`.
 The current MMAP adapter is lossy; high-fidelity compatibility and MindManager acceptance
